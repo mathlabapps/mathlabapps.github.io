@@ -1,0 +1,3506 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>9. Inequalities in One Variable - Graphing Calculator by Mathlab:User Manual</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="google-site-verification" content="zit_4DvCjxyCv4CwOW7TwW_ShIYUfV1U3Vr2M_EwVXs" />
+	
+	<!-- This is linked in so that custom jquery scripts can be added -->
+	<script type="text/javascript" src="jquery-1.8.3.js"></script>
+	<!-- -->
+	<script type="text/javascript">
+		function googleTranslateElementInit() 
+		{
+			new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-36079407-1'}, 'google_translate_element');
+		}
+	</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1615240868" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#24678d !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#24678d !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script src='files/templateArtifacts.js?1586760385'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "120283564259502806";
+			com_userID = "14418664";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	var DISABLE_NAV_MORE = 1;
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"494836927354099638","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"666165700224662807","title":"1. Basics","url":"1-basics.html","target":"","nav_menu":false,"nonclickable":false},{"id":"968467971849662187","title":"2. Settings","url":"2-settings.html","target":"","nav_menu":false,"nonclickable":false},{"id":"987300793632090636","title":"3. Library","url":"3-library.html","target":"","nav_menu":false,"nonclickable":false},{"id":"168005519445418851","title":"4. Graph Mode","url":"4-graph-mode.html","target":"","nav_menu":false,"nonclickable":false},{"id":"733521370970587220","title":"5. Table Mode","url":"5-table-mode.html","target":"","nav_menu":false,"nonclickable":false},{"id":"304761841283070016","title":"6. Numbers and Number Sense","url":"6-numbers-and-number-sense.html","target":"","nav_menu":false,"nonclickable":false},{"id":"582575439157745955","title":"7. Introductory Algebra","url":"7-introductory-algebra.html","target":"","nav_menu":false,"nonclickable":false},{"id":"343940256525908488","title":"8. Equations in One Variable","url":"8-equations-in-one-variable.html","target":"","nav_menu":false,"nonclickable":false},{"id":"257870702632853624","title":"9. Inequalities in One Variable","url":"9-inequalities-in-one-variable.html","target":"","nav_menu":false,"nonclickable":false},{"id":"834107861543571539","title":"10. Equations and Inequalities in Two Variables","url":"10-equations-and-inequalities-in-two-variables.html","target":"","nav_menu":false,"nonclickable":false},{"id":"433078594708793770","title":"11. Algebraic Functions and Graphs","url":"11-algebraic-functions-and-graphs.html","target":"","nav_menu":false,"nonclickable":false},{"id":"336146427611147363","title":"12. Matrices and Vectors","url":"12-matrices-and-vectors.html","target":"","nav_menu":false,"nonclickable":false},{"id":"568762772342978052","title":"13. Trigonometric Functions and Their Inverses","url":"13-trigonometric-functions-and-their-inverses.html","target":"","nav_menu":false,"nonclickable":false},{"id":"986517263631860764","title":"14. Analytic Geometry","url":"14-analytic-geometry.html","target":"","nav_menu":false,"nonclickable":false},{"id":"809315539647968618","title":"15. Limits","url":"15-limits.html","target":"","nav_menu":false,"nonclickable":false},{"id":"622870541659906761","title":"16. Derivatives","url":"16-derivatives.html","target":"","nav_menu":false,"nonclickable":false},{"id":"737099774911119901","title":"17. Partial Derivatives","url":"17-partial-derivatives.html","target":"","nav_menu":false,"nonclickable":false},{"id":"494939315433513104","title":"18. Definite Integral","url":"18-definite-integral.html","target":"","nav_menu":false,"nonclickable":false},{"id":"947990530193219242","title":"19. Basic Statistics","url":"19-basic-statistics.html","target":"","nav_menu":false,"nonclickable":false},{"id":"794264524115728390","title":"20. Special Functions","url":"20-special-functions.html","target":"","nav_menu":false,"nonclickable":false},{"id":"204407189693645026","title":"21. List of ALL Functions","url":"21-list-of-all-functions.html","target":"","nav_menu":false,"nonclickable":false}],
+			"257870702632853624",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="no-header-page  wsite-theme-light  wsite-page-9-inequalities-in-one-variable"><div id="header-wrap">
+        <div class="container">
+            <table id="header">
+                <tr>
+					<!-- This google Play module was added in manually-->
+					<td> 
+						<a href='https://play.google.com/store/apps/details?id=us.mathlab.android&referrer=utm_source%3Dhelp.mathlab.us%26utm_campaign%3Dbadge'>
+							<img alt='Get it on Google Play' src='http://i.imgur.com/oKnySJO.png'/>
+						</a> 
+					</td>
+				<td>
+					
+					<!-- This div was added in, not part of Weebly's html generation -->
+					<div>
+						<div id="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Graphing Calculator by Mathlab:<br />User Manual</span>
+	
+	</a>
+
+</span></div> 
+						
+						<!-- This google translate element has been added in manually as well as the appliv description-->
+						<div id="google_translate_element"></div>
+					</div>
+					
+				</td>
+				<!-- This is a manually inserted link, not part of Weebly's html generation -->
+				<td> <a href="http://app-liv.com/android/en/1163961" target="_blank"><img src="http://img.app-liv.com/link/appliv_s_b.png" alt="Appliv -iPhone/Android App Discovery Website" /></a> </td>
+                </tr>
+            </table>
+			<!-- End of inserted content -->
+        </div><!-- end container -->
+    </div><!-- end header-wrap -->  
+
+    <div id="nav-wrap">
+        <div class="container">
+			<table id="nav-table">
+				<tr>
+					<td><ul class="wsite-menu-default">
+		<li id="pg494836927354099638" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-684710665852164319"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="introduction.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Introduction
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-687325723872576877"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pro-features-vs-free-version.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			PRO Features vs. FREE Version
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-323475930379009422"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="frequently-asked-questions-faqs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Frequently Asked Questions, FAQs
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-234749722727115307"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1-how-to-change-the-number-format.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.  How to Change the Number Format?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-979919231116481114"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="2-how-to-set-up-the-separators-between-thousands.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2. How to Set Up the Separators Between Thousands?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-174878895925322197"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="3-how-to-set-precision.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3. How to Set Precision?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-808607238985491609"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="4-how-to-send-feedback-with-comments.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4. How to Send Feedback with Comments?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-253756257113592003"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="5-how-to-importexport-the-library.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5. How to import/export the library?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-435505182125695812"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6-how-to-print-results.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6. How to Print Results?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-653903549223166395"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="7-how-to-make-the-calculator-show-the-results.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7. How to Make the Calculator Show the Results?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-287321938794324071"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="8-how-to-transport-calculation-results-to-other-programs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8. How to Transport Calculation Results to other Programs?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-988398427280486121"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="9-how-to-transport-table-to-other-platforms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9. How to Transport Table to Other Platforms?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466602375186553544"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="10-how-to-turn-off-or-on-vibration.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10. How to Turn Off (or on) Vibration?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-252362636866551634"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="11-how-to-change-the-language.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11. How to Change the Language?
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg666165700224662807" class="wsite-menu-item-wrap">
+			<a
+						href="1-basics.html"
+				class="wsite-menu-item"
+				>
+				1. Basics
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-394827999878312292"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="11-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.1. Navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-360351905525779118"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="12-ui-elements.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.2. UI Elements
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-206651792168766254"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="13-keyboard.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.3. Keyboard
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-428099876497246146"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="14-input-enter-delete-clear-and-undo-buttons.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.4. Input, Enter, Delete, Clear and UNDO Buttons
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-947796775295041953"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="15-workspace-area.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.5. Workspace Area
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-569054740981269259"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="16-editing-the-expressionequation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.6. Editing the Expression/Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-818724490405313299"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="17-using-the-last-answer.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.7. Using the Last Answer
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-677309092927922602"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="18-writing-comments.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.8. Writing Comments
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-605917561942817175"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="19-clear-copy--paste-commands.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.9. Clear, Copy & Paste Commands
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-216297645385197168"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="110-rearranging-rows.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.10. Rearranging Rows
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg968467971849662187" class="wsite-menu-item-wrap">
+			<a
+						href="2-settings.html"
+				class="wsite-menu-item"
+				>
+				2. Settings
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-671322958888814984"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="21-general.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.1. General
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-934366752913330015"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="22-calculator.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.2. Calculator
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-308065625763490860"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="23-graph.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.3. Graph
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg987300793632090636" class="wsite-menu-item-wrap">
+			<a
+						href="3-library.html"
+				class="wsite-menu-item"
+				>
+				3. Library
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-170157802703483186"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="31-constants.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.1. Constants
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-592321062923411896"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="32-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.2. Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-321413251749203826"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="33-how-to-save-calculation-resultgraph-to-library.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.3. How to Save Calculation Result/Graph to Library?
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg168005519445418851" class="wsite-menu-item-wrap">
+			<a
+						href="4-graph-mode.html"
+				class="wsite-menu-item"
+				>
+				4. Graph Mode
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-307986321889832176"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="41-2d-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.1. 2D Graphing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-986541576415209658"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="42-3d-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.2. 3D Graphing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-431039210336782332"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="43-enlarging-the-graph-area.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.3. Enlarging the Graph Area
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-919130908291345963"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="44-changing-to-white-background.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.4. Changing to White Background
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-398883164741712789"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="45-hide-keyboard.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.5. Hide Keyboard
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898634439630590049"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="46-degree-and-radian-scales.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.6. Degree and Radian Scales
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-697422058120603474"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="47-fixed-scale.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.7. Fixed Scale
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-418227556791172507"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="48-r-axis-scale.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.8. R-axis Scale
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-821795316473287935"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="49-logarithmic-scale.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.9. Logarithmic Scale
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-145952067655508009"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="410-tracing-values-and-slopes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.10. Tracing Values and Slopes
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-859071113771942870"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="411-special-points-roots-and-criticals.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.11. Special Points: Roots and Criticals
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-648783183463698077"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="412-intersections-of-graphs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.12. Intersections of Graphs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-366885285609567894"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="413-set-domain.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.13. Set Domain
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-340626002424710660"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="414-show-all---roots-critical-points-and-intersections.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.14. Show All - Roots, Critical Points and Intersections
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-662015072187058276"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="415-fullscreen.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.15. Fullscreen
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg733521370970587220" class="wsite-menu-item-wrap">
+			<a
+						href="5-table-mode.html"
+				class="wsite-menu-item"
+				>
+				5. Table Mode
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-317323027430823455"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="51-sharing-of-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.1. Sharing of Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-395110992740506525"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="52-2d-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.2. 2D Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-632600935859744925"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="53-3d-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.3. 3D Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-402681197473421324"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="54-edit-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.4. Edit Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-158421982999522369"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="55-scroll-results.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.5. Scroll Results
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-815137646886180785"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="56-results-precision.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.6. Results Precision
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-458243842398852810"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="57-zoom-controls.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.7. Zoom Controls
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-944387626424070411"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="58-save-and-load-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.8. Save and Load Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-548027393374389210"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="59-table-of-trigonometric-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.9. Table of Trigonometric Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg304761841283070016" class="wsite-menu-item-wrap">
+			<a
+						href="6-numbers-and-number-sense.html"
+				class="wsite-menu-item"
+				>
+				6. Numbers and Number Sense
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-133420841879859676"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="61-decimals.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.1. Decimals
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-309442815600408963"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="62-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2. Fractions
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-516188884667485371"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="621-mixed-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.1. Mixed Fractions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136028412220639514"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="622-complex-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.2. Complex Fractions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-976647689899263175"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="623-converting-decimals-to-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.3. Converting Decimals to Fractions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-819354715979155621"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="624-converting-fractions-to-decimals.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.4. Converting Fractions to Decimals
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-218680343674388842"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="63-percents.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.3. Percents
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703269517849615091"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="64-scientific-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.4. Scientific Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-548806218518137890"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="65-engineering-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.5. Engineering Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-371380081594043926"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="66-rounding-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.6. Rounding Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-701953590580476177"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="67-integer-and-fractional-parts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7. Integer and Fractional Parts
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-382130296833105419"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="671-integer-part-of-a-number.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1. Integer Part of a Number
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-154866060267313455"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6711-ceiling.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.1. Ceiling
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-835955404341958512"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6712-floor.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.2. Floor
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-655099597190170936"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6713-half-down.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.3. Half Down
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-132891119932638874"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6714-half-to-even.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.4. Half to Even
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-304468195794896780"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6715-half-to-infinity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.5. Half to Infinity
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-892672997246330802"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6716-half-to-odd.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.6. Half to Odd
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-546488144401187859"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6717-half-to-zero.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.7.  Half to Zero
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-900120224572283346"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6718-half-up.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.8. Half Up
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447655661310342583"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6719-truncate.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.9. Truncate
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-346980138388893987"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="672-greatest-integer-is-the-floor-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.2. Greatest Integer is the Floor Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-297371597643175838"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="673-least-integer-is-the-ceiling-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.3. Least Integer is the Ceiling Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-695355473561839527"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="674-fractional-part-of-a-number.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.4. Fractional Part of a Number
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-661954720781707343"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="68-order-of-operations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.8. Order of Operations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-563310715183558080"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="69-least-common-multiple.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.9. Least Common Multiple
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-655726180943902621"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="610-greatest-common-divisor.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.10. Greatest Common Divisor
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-741163809434290972"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="611-modulo.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.11.  Modulo
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-165348835407208622"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="612-binary-octal-decimal-hexadecimal-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.12. Binary, Octal, Decimal, Hexadecimal Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-162705388672023216"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="613-complex-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.13. Complex Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-845347489189885331"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="614-the-polar-form-of-complex-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.14. The Polar Form of Complex Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-276386934953186252"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="615-polar-to-rectangular-coordinates.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.15. Polar to Rectangular Coordinates
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg582575439157745955" class="wsite-menu-item-wrap">
+			<a
+						href="7-introductory-algebra.html"
+				class="wsite-menu-item"
+				>
+				7. Introductory Algebra
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-754105586663612329"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="71-arithmetic-operations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.1. Arithmetic Operations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-575993092779109992"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="72-exponents.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.2. Exponents
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-901015643396158327"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="73-absolute-values.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.3. Absolute Values
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-243002733113289939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="74-variables.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.4. Variables
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-172919213333790220"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="75-evaluating-expressions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.5. Evaluating Expressions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-884875953976206581"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="76-polynomials.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.6. Polynomials
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-946791234545533219"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="77-roots.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.7. Roots
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-782049735527216791"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="78-logarithms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.8. Logarithms
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg343940256525908488" class="wsite-menu-item-wrap">
+			<a
+						href="8-equations-in-one-variable.html"
+				class="wsite-menu-item"
+				>
+				8. Equations in One Variable
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-936873800490378436"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="81-linear-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.1. Linear Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-459795111193880324"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="82-absolute-value-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.2. Absolute Value Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-920457574941109857"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="83-quadratic-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.3. Quadratic Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-407997787411981553"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="84-cubic-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.4. Cubic Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-774276685862374234"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="85-polynomial-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.5. Polynomial Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-543264073610220377"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="86-rational-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.6. Rational Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-865203710747633095"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="87-radical-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.7. Radical Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-162593597428723526"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="88-exponential-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.8. Exponential Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447180043303146129"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="89-logarithmic-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.9. Logarithmic Equation
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="active" class="wsite-menu-item-wrap">
+			<a
+						href="9-inequalities-in-one-variable.html"
+				class="wsite-menu-item"
+				>
+				9. Inequalities in One Variable
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-829419249139658715"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="91-inequality-symbols.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.1. Inequality Symbols
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-477796787341153847"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="92-linear-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.2. Linear Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-661434620749462445"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="93-absolute-value-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.3. Absolute Value Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-744019217831557729"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="94-quadratic-inequality.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.4. Quadratic Inequality
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-557891156148948162"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="95-polynomial-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.5.  Polynomial Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-540948176516187904"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="96-rational-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.6. Rational Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-570936225468636752"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="97-compound-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.7. Compound Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-832908249288787909"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="98-inequalities-with-constants.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.8. Inequalities with Constants
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg834107861543571539" class="wsite-menu-item-wrap">
+			<a
+						href="10-equations-and-inequalities-in-two-variables.html"
+				class="wsite-menu-item"
+				>
+				10. Equations and Inequalities in Two Variables
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-678170082853057258"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="101-linear-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.1. Linear Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-992175026314334812"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="102-systems-of-linear-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.2. Systems of Linear Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-945765925885687536"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="103-graphing-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.3. Graphing Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-500205564128213454"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="104-multiple-graphing-of-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.4. Multiple Graphing of Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-697115097252593524"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="105-graphing-systems-of-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.5. Graphing Systems of Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-823774486677608930"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="106-solving-implicit-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.6. Solving Implicit Equations
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg433078594708793770" class="wsite-menu-item-wrap">
+			<a
+						href="11-algebraic-functions-and-graphs.html"
+				class="wsite-menu-item"
+				>
+				11. Algebraic Functions and Graphs
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-598307137505495346"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="111-plotting-points.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.1. Plotting Points
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-910329565415715303"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="112-how-to-graph-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.2. How to Graph Functions?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-481217698972063059"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="113-setting-the-applied-domain.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.3. Setting the Applied Domain
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-970536912717699496"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="114-linear-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.4. Linear Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-512327631450616085"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="115-absolute-value-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.5. Absolute Value Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-565050874240174596"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="116-quadratic-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.6. Quadratic Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-674892466129509418"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="117-polynomial-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.7. Polynomial Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-603836568170015414"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="118-rational-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.8. Rational Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-696508367181165666"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="119-radical-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.9. Radical Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-293241961710438396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1110-logarithmic-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.10. Logarithmic Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-876201967545969080"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1111-exponential-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.11. Exponential Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-219594703182619417"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1112-sign-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.12. Sign Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-201549654671042607"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1113-multiple-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.13. Multiple Graphing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-504084811759600096"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1114-piecewise-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.14. Piecewise Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg336146427611147363" class="wsite-menu-item-wrap">
+			<a
+						href="12-matrices-and-vectors.html"
+				class="wsite-menu-item"
+				>
+				12. Matrices and Vectors
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-365649865904424058"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="121-matrix-operations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.1. Matrix Operations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-387948584948386544"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="122-editing-matrix-entries.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.2. Editing Matrix Entries
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-930338605436393168"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="123-matrix-variables.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.3. Matrix Variables
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-741178430629723862"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="124-matrix-and-vector-forms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.4. Matrix and Vector Forms
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-823782585218344181"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="125-variable-matrix-to-system-of-linear-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.5. Variable Matrix to System of Linear Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-560625352675921555"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="126-solving-systems-of-linear-equations-using-matrix-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.6. Solving Systems of Linear Equations Using Matrix Equations
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg568762772342978052" class="wsite-menu-item-wrap">
+			<a
+						href="13-trigonometric-functions-and-their-inverses.html"
+				class="wsite-menu-item"
+				>
+				13. Trigonometric Functions and Their Inverses
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-692336712153288897"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="131-degrees-and-radians.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.1. Degrees and Radians
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-634003183717741539"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1311-degrees-minutes-and-seconds.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.1.1. Degrees, Minutes and Seconds
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-868856033330263983"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1312-bradis-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.1.2. Bradis Table
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-130382301456327054"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="132-trigonometric-function-keys.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.2. Trigonometric Function Keys
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-696050955599742729"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="133-trigonometric-values-of-special-angles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3. Trigonometric Values of Special Angles
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-524612744371709437"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1331-the-45--45---90-triangle.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.1. The 45- 45 - 90 Triangle
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-680927174901419664"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1332-the-30-60-90-triangle.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.2. The 30-60-90 Triangle
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-821356029820885968"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1333-quadrantal-angles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.3. Quadrantal Angles
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-237041173415201293"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1334-coterminal-angles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.4. Coterminal Angles
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-782096697363035277"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="134-trigonometric-values-of-15-degrees-and-its-multiples.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.4. Trigonometric Values of 15 Degrees and Its Multiples
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-692891466249753108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="135-hyperbolic-function-keys.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.5. Hyperbolic Function Keys
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-894204970915930915"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="136-graphing-trigonometric-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.6. Graphing Trigonometric Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-802715518918109637"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="137-graphing-hyperbolic-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.7. Graphing Hyperbolic Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-831328955641006141"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="138-graphing-inverse-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.8. Graphing Inverse Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg986517263631860764" class="wsite-menu-item-wrap">
+			<a
+						href="14-analytic-geometry.html"
+				class="wsite-menu-item"
+				>
+				14. Analytic Geometry
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322915204949469374"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="141-conic-sections.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.1. Conic Sections
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-231304736704487768"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="142-parametric-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.2. Parametric Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-965397543782177870"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="143-polar-graphs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3. Polar Graphs
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-373148663388506895"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1431-limacon.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.1. Limacon
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-753327372178553066"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1432-cardioid.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.2. Cardioid
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-368967417290624038"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1433-lemniscate.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.3. Lemniscate
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-861282168561381987"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1434-rose.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.4. Rose
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-921204374710009894"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1435-other-polar-graphs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.5. Other Polar Graphs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-600176483438295150"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="144-3d-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.4. 3D Graphing
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg809315539647968618" class="wsite-menu-item-wrap">
+			<a
+						href="15-limits.html"
+				class="wsite-menu-item"
+				>
+				15. Limits
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-676650799380127215"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="151-right---hand-limit.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.1. Right - hand Limit
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-639357053516998823"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="152-left---hand-limit.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.2. Left - hand Limit
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-928220416209615680"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="153-limit-of-a-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.3. Limit of a Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-538444232367478326"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="154-limit-of-a-polynomial-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.4. Limit of a Polynomial Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-573032162600384844"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="155-limit-of-a-rational-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.5. Limit of a Rational Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-130249620865732299"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="156-limit-of-a-radical-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.6. Limit of a Radical Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-339079824589560372"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="157-limit-of-an-absolute-value-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.7. Limit of an Absolute Value Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-495167947717716997"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="158-limit-of-a-trigonometric-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.8. Limit of a Trigonometric Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-625283135388003451"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="159-limit-of-an-exponential-and-logarithmic-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.9. Limit of an Exponential and Logarithmic Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-616777965564460804"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1510-limit-of-a-piece-wise-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.10. Limit of a Piece-wise Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-995085571338569754"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1511-limits-at-infinity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.11. Limits at Infinity
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-676233851987504664"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1512-indeterminate-forms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.12. Indeterminate Forms
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-944811962384789188"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1513-limit-of-a-hyperbolic-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.13. Limit of a Hyperbolic Function
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg622870541659906761" class="wsite-menu-item-wrap">
+			<a
+						href="16-derivatives.html"
+				class="wsite-menu-item"
+				>
+				16. Derivatives
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-442607340983082679"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="161-first-derivative-key.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.1. First Derivative Key
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-998121817449862849"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="162-second-derivative-key.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.2. Second Derivative Key
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-112526188887191531"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="163-third-and-higher-derivative-keys.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.3. Third and Higher Derivative Keys
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-847701761359394859"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="164-rules-of-differentiation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.4. Rules of Differentiation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-852165611374160284"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="165-derivatives-of-polynomial-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.5. Derivatives of Polynomial Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-465622605968900493"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="166-derivatives-of-rational-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.6. Derivatives of Rational Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-984202925694036761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="167-dervatives-of-trigonometric-logarithmic-and-and-exponential-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.7. Dervatives of Trigonometric, Logarithmic and and Exponential Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-529697346438250980"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="168-more-on-derivatives.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.8. More on Derivatives
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg737099774911119901" class="wsite-menu-item-wrap">
+			<a
+						href="17-partial-derivatives.html"
+				class="wsite-menu-item"
+				>
+				17. Partial Derivatives
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-849498413759856429"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="171-increments.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.1. Increments
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-789771136209486432"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="172-dervative-of-a-function-df-or-dy.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.2. Dervative of a Function df  (or dy))
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-478657008927010302"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="173-derivative-of-a-function-df-f-not-in-terms-of-x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.3. Derivative of a Function df (f not in terms of x)
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-777014641750098179"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="174-partial-derivatives.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.4. Partial Derivatives
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-658418568726631758"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="175-higher-order-partial-derivatives.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.5. Higher Order Partial Derivatives
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-961379766438890573"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="176-total-derivates.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.6. Total Derivates
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg494939315433513104" class="wsite-menu-item-wrap">
+			<a
+						href="18-definite-integral.html"
+				class="wsite-menu-item"
+				>
+				18. Definite Integral
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-235274034952164498"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="181-definite-integral-of-algebraic-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			18.1. Definite Integral of Algebraic Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-547176219976455825"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="182-definite-integral-of-trigonometric-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			18.2. Definite Integral of Trigonometric Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg947990530193219242" class="wsite-menu-item-wrap">
+			<a
+						href="19-basic-statistics.html"
+				class="wsite-menu-item"
+				>
+				19. Basic Statistics
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-177516652811722414"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="191-summation-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.1. Summation Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-575034705702079231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="192-product-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.2. Product Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-412770694750402929"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="193-minimum-and-maximum.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.3. Minimum and Maximum
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-118690554122532600"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="194-factorial-ncr-and-npr.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.4. Factorial, nCr and nPr
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-562573198479479985"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="195-measures-of-central-tendency.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5. Measures of Central Tendency
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-119844467994913384"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1951-mean-from-ungrouped-data-set.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.1. Mean from Ungrouped Data Set
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-326666280695129546"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1952-mean-from-frequency-distribution-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.2. Mean from Frequency Distribution Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-170065214242849335"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1953-median-from-ungrouped-data-set.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.3. Median from Ungrouped Data Set
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-735352278252654534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1954-mode.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.4. Mode
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-901357026466622645"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="196-measures-of-variability.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6. Measures of Variability
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-117080973540380188"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1961-range.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.1. Range
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-781085078195806315"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1962-interquartile-range-and-quartile-deviation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.2. Interquartile Range and Quartile Deviation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-251184091782751275"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1963-mean-absolute-deviation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.3. Mean Absolute Deviation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-272856058686504227"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1964-variance-and-standard-deviation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.4. Variance and Standard Deviation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-734636258784175774"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1965-coefficient-of-variation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.5. Coefficient of Variation
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-374497556870918431"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="197-measures-of-position.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.7. Measures of Position
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-282737661863809942"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="198-bivariate-data-analysis.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8. Bivariate Data Analysis
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-867938904284817473"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1981-covariance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8.1 Covariance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-660426631502681015"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1982-correlation-coefficient.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8.2. Correlation Coefficient
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-149259474261564324"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1983-scatterplot-and-regression-line.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8.3. Scatterplot and Regression Line
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg794264524115728390" class="wsite-menu-item-wrap">
+			<a
+						href="20-special-functions.html"
+				class="wsite-menu-item"
+				>
+				20. Special Functions
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-565534533178476126"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="201-gamma-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			20.1. Gamma Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-271826537847110909"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="202-logarithmic-gamma-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			20.2. Logarithmic Gamma Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-880609011305329237"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="203-digamma-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			20.3. Digamma Function
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg204407189693645026" class="wsite-menu-item-wrap">
+			<a
+						href="21-list-of-all-functions.html"
+				class="wsite-menu-item"
+				>
+				21. List of ALL Functions
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-654853158709099079"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="211-arithmetics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.1. Arithmetics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-143235216303558948"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="212-algebra.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.2. Algebra
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-534071094259778534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="213-trigonometry.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.3. Trigonometry
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-855296132451721013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="214-statistics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.4. Statistics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-513066159205928399"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="215-calculus.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.5. Calculus
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+</ul>
+</td>
+					<td class="header-right">
+						<table>
+							<tr>
+								<td class="phone-number"></td>
+								<td class="search"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>				
+			</table>
+			<!-- Developer: Vadim Pelyushenko-->
+			<!-- <gcse:search></gcse:search> this doesn't appear to work outside of thijs code editor-->
+			<!-- This gcse works with the script in the bottom of this document-->
+        </div><!-- end container -->
+    </div><!-- end nav-wrap -->
+    <div id="banner-wrap">
+        <div class="container">
+            <div id="banner">
+            
+                <div style="clear:both;"></div>
+            
+            </div><!-- end banner -->
+        </div><!-- end container -->
+    </div><!-- end banner-wrap -->
+
+    <div id="main-wrap">
+        <div class="container">
+   			<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div><div id="942259984360342231" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><style>
+.help-site-top-responsive { width: 320px; height: 50px; }
+@media(min-width: 500px) { .help-site-top-responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .help-site-top-responsive { width: 728px; height: 90px; } }
+</style>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Help site top responsive -->
+<ins class="adsbygoogle help-site-top-responsive"
+     style="display:inline-block"
+     data-ad-client="ca-pub-5865311875227536"
+     data-ad-slot="2916603206"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+
+</div>
+
+<div><div id="759066046550600522" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script>
+  (function() {
+    var cx = '017459606385276639634:0k76wbdgiiu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title" style="text-align:left;"><strong><font color="#24678d">CHAPTER 9. ONE-VARIABLE INEQUALITIES</font></strong></h2>
+
+<div class="paragraph" style="text-align:left;"><a href="91-inequality-symbols.html">9.1 Inequality Symbols</a><br /><a href="92-linear-inequalities.html">9.2 Linear Inequalities</a><br /><a href="93-absolute-value-inequalities.html">9.3 Absolute Value Inequalities</a><br /><a href="94-quadratic-inequality.html">9.4 Quadratic Inequalities</a><br /><a href="95-polynomial-inequalities.html">9.5 Polynomial Inequalities</a><br /><a href="96-rational-inequalities.html">9.6 Rational Inequalities</a><br /><a href="97-compound-inequalities.html">9.7 Compound Inequalities</a><br /><a href="98-inequalities-with-constants.html">9.8 Inequalities with Constants</a><br /></div>
+
+<div><div id="447198522409256338" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script>
+  (function() {
+    var cx = '017459606385276639634:0k76wbdgiiu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div>
+
+
+
+</div>
+
+<div><div id="721116968654110864" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><style>
+.help-site-top-responsive { width: 320px; height: 50px; }
+@media(min-width: 500px) { .help-site-top-responsive { width: 468px; height: 60px; } }
+@media(min-width: 800px) { .help-site-top-responsive { width: 728px; height: 90px; } }
+</style>
+<script async src="http://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<!-- Help site top responsive -->
+<ins class="adsbygoogle help-site-top-responsive"
+     style="display:inline-block"
+     data-ad-client="ca-pub-5865311875227536"
+     data-ad-slot="2916603206"></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script></div>
+
+
+
+</div>
+
+<div style="text-align:right;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-highlight" href="91-inequality-symbols.html" >
+<span class="wsite-button-inner">NEXT: 9.1. Inequality Symbols&gt;</span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+
+<div style="text-align:right;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-normal" href="" >
+<span class="wsite-button-inner"><span><span>List of contents </span></span></span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+</div>
+
+        </div><!-- end container -->
+    </div><!-- end main-wrap -->
+
+    <div id="footer-wrap">
+        <div class="container">
+       		Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a>
+        </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+
+<!-- THIS SCRIPT IS ADDED IN MANUALLY-->
+<!-- Developer: Vadim Pelyushenko-->
+<script>
+	$(document).ready(function() 
+	 {
+		var cx = '017459606385276639634:0k76wbdgiiu';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	 });			  
+</script>    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33223602-1', 'mathlab.us');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>

@@ -1,0 +1,3665 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<title>19.8. Bivariate Data Analysis - Graphing Calculator by Mathlab:User Manual</title>
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+	<meta name="google-site-verification" content="zit_4DvCjxyCv4CwOW7TwW_ShIYUfV1U3Vr2M_EwVXs" />
+	
+	<!-- This is linked in so that custom jquery scripts can be added -->
+	<script type="text/javascript" src="jquery-1.8.3.js"></script>
+	<!-- -->
+	<script type="text/javascript">
+		function googleTranslateElementInit() 
+		{
+			new google.translate.TranslateElement({pageLanguage: 'en', gaTrack: true, gaId: 'UA-36079407-1'}, 'google_translate_element');
+		}
+	</script>
+<script type="text/javascript" src="http://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+
+		
+		<link id="wsite-base-style" rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/sites.css?buildTime=1234" />
+<link rel="stylesheet" type="text/css" href="http://cdn2.editmysite.com/css/old/fancybox.css?1234" />
+<link rel="stylesheet" type="text/css" href="files/main_style.css?1615240868" title="wsite-theme-css" />
+<link href='http://fonts.googleapis.com/css?family=Quattrocento:400,700&subset=latin,latin-ext' rel='stylesheet' type='text/css' />
+
+<style type='text/css'>
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, #blogTable .blog-sidebar a, #blogTable .blog-comments a, #blogTable .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#24678d !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, #blogTable .blog-sidebar a:hover, #blogTable .blog-comments a:hover, #blogTable .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#24678d !important;}
+@media screen and (min-width: 767px) {.wsite-elements.wsite-not-footer:not(.wsite-header-elements) div.paragraph, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) p, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-block .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-description, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .wsite-form-field label, #wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+#wsite-content div.paragraph, #wsite-content p, #wsite-content .product-block .product-title, #wsite-content .product-description, #wsite-content .wsite-form-field label, #wsite-content .wsite-form-field label, .blog-sidebar div.paragraph, .blog-sidebar p, .blog-sidebar .wsite-form-field label, .blog-sidebar .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label{}
+.wsite-elements.wsite-not-footer:not(.wsite-header-elements) h2, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-long .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-large .product-title, .wsite-elements.wsite-not-footer:not(.wsite-header-elements) .product-small .product-title, #wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+#wsite-content h2, #wsite-content .product-long .product-title, #wsite-content .product-large .product-title, #wsite-content .product-small .product-title, .blog-sidebar h2 {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title{}
+#wsite-title {}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline,.wsite-header-section .wsite-content-title {}
+.wsite-headline-paragraph,.wsite-header-section .paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#wsite-content h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+}</style>
+
+		<script src='files/templateArtifacts.js?1586760385'></script>
+<script>
+var STATIC_BASE = '//cdn1.editmysite.com/';
+var ASSETS_BASE = '//cdn2.editmysite.com/';
+var STYLE_PREFIX = 'wsite';
+</script>
+<script src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script>
+<script src="http://cdn2.editmysite.com/js/site/main.js?buildTime=1234"></script><script type="text/javascript">
+		function initCustomerAccountsModels() {
+					(function(){_W.setup_rpc({"url":"\/ajax\/api\/JsonRPC\/CustomerAccounts\/","actions":{"CustomerAccounts":[{"name":"login","len":2,"multiple":false,"standalone":false},{"name":"logout","len":0,"multiple":false,"standalone":false},{"name":"getSessionDetails","len":0,"multiple":false,"standalone":false},{"name":"getAccountDetails","len":0,"multiple":false,"standalone":false},{"name":"getOrders","len":0,"multiple":false,"standalone":false},{"name":"register","len":4,"multiple":false,"standalone":false},{"name":"emailExists","len":1,"multiple":false,"standalone":false},{"name":"passwordReset","len":1,"multiple":false,"standalone":false},{"name":"passwordUpdate","len":3,"multiple":false,"standalone":false},{"name":"validateSession","len":1,"multiple":false,"standalone":false}]},"namespace":"_W.CustomerAccounts.RPC"});
+_W.setup_model_rpc({"rpc_namespace":"_W.CustomerAccounts.RPC","model_namespace":"_W.CustomerAccounts.BackboneModelData","collection_namespace":"_W.CustomerAccounts.BackboneCollectionData","bootstrap_namespace":"_W.CustomerAccounts.BackboneBootstrap","models":{"CustomerAccounts":{"_class":"CustomerAccounts.Model.CustomerAccounts","defaults":null,"validation":null,"types":null,"idAttribute":null,"keydefs":null}},"collections":{"CustomerAccounts":{"_class":"CustomerAccounts.Collection.CustomerAccounts"}},"bootstrap":[]});
+})();
+		}
+		if(document.createEvent && document.addEventListener) {
+			var initEvt = document.createEvent('Event');
+			initEvt.initEvent('customerAccountsModelsInitialized', true, false);
+			document.dispatchEvent(initEvt);
+		} else if(document.documentElement.initCustomerAccountsModels === 0){
+			document.documentElement.initCustomerAccountsModels++
+		}
+		</script>
+		<script type="text/javascript"> _W = _W || {}; _W.securePrefix='UNSET'; </script><script>_W = _W || {};
+			_W.customerLocale = "en_US";
+			_W.storeName = null;
+			_W.isCheckoutReskin = false;
+			_W.storeCountry = "US";
+			_W.storeCurrency = "USD";
+			_W.storeEuPrivacyPolicyUrl = "";
+			com_currentSite = "120283564259502806";
+			com_userID = "14418664";</script><script type="text/javascript">_W.configDomain = "www.weebly.com";</script><script>_W.relinquish && _W.relinquish()</script>
+<script type="text/javascript" src="http://cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234&"></script><script> _W.themePlugins = [];</script><script type="text/javascript"> _W.recaptchaUrl = "https://www.google.com/recaptcha/api.js"; </script><script type="text/javascript"><!--
+	var IS_ARCHIVE = 1;
+	var DISABLE_NAV_MORE = 1;
+	function initFlyouts(){
+		initPublishedFlyoutMenus(
+			[{"id":"494836927354099638","title":"Home","url":"index.html","target":"","nav_menu":false,"nonclickable":false},{"id":"666165700224662807","title":"1. Basics","url":"1-basics.html","target":"","nav_menu":false,"nonclickable":false},{"id":"968467971849662187","title":"2. Settings","url":"2-settings.html","target":"","nav_menu":false,"nonclickable":false},{"id":"987300793632090636","title":"3. Library","url":"3-library.html","target":"","nav_menu":false,"nonclickable":false},{"id":"168005519445418851","title":"4. Graph Mode","url":"4-graph-mode.html","target":"","nav_menu":false,"nonclickable":false},{"id":"733521370970587220","title":"5. Table Mode","url":"5-table-mode.html","target":"","nav_menu":false,"nonclickable":false},{"id":"304761841283070016","title":"6. Numbers and Number Sense","url":"6-numbers-and-number-sense.html","target":"","nav_menu":false,"nonclickable":false},{"id":"582575439157745955","title":"7. Introductory Algebra","url":"7-introductory-algebra.html","target":"","nav_menu":false,"nonclickable":false},{"id":"343940256525908488","title":"8. Equations in One Variable","url":"8-equations-in-one-variable.html","target":"","nav_menu":false,"nonclickable":false},{"id":"257870702632853624","title":"9. Inequalities in One Variable","url":"9-inequalities-in-one-variable.html","target":"","nav_menu":false,"nonclickable":false},{"id":"834107861543571539","title":"10. Equations and Inequalities in Two Variables","url":"10-equations-and-inequalities-in-two-variables.html","target":"","nav_menu":false,"nonclickable":false},{"id":"433078594708793770","title":"11. Algebraic Functions and Graphs","url":"11-algebraic-functions-and-graphs.html","target":"","nav_menu":false,"nonclickable":false},{"id":"336146427611147363","title":"12. Matrices and Vectors","url":"12-matrices-and-vectors.html","target":"","nav_menu":false,"nonclickable":false},{"id":"568762772342978052","title":"13. Trigonometric Functions and Their Inverses","url":"13-trigonometric-functions-and-their-inverses.html","target":"","nav_menu":false,"nonclickable":false},{"id":"986517263631860764","title":"14. Analytic Geometry","url":"14-analytic-geometry.html","target":"","nav_menu":false,"nonclickable":false},{"id":"809315539647968618","title":"15. Limits","url":"15-limits.html","target":"","nav_menu":false,"nonclickable":false},{"id":"622870541659906761","title":"16. Derivatives","url":"16-derivatives.html","target":"","nav_menu":false,"nonclickable":false},{"id":"737099774911119901","title":"17. Partial Derivatives","url":"17-partial-derivatives.html","target":"","nav_menu":false,"nonclickable":false},{"id":"494939315433513104","title":"18. Definite Integral","url":"18-definite-integral.html","target":"","nav_menu":false,"nonclickable":false},{"id":"947990530193219242","title":"19. Basic Statistics","url":"19-basic-statistics.html","target":"","nav_menu":false,"nonclickable":false},{"id":"794264524115728390","title":"20. Special Functions","url":"20-special-functions.html","target":"","nav_menu":false,"nonclickable":false},{"id":"204407189693645026","title":"21. List of ALL Functions","url":"21-list-of-all-functions.html","target":"","nav_menu":false,"nonclickable":false}],
+			"282737661863809942",
+			'',
+			'active',
+			false,
+			{"navigation\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}} class=\"wsite-menu-item-wrap\">\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\t{{#membership_required}}\n\t\t\tdata-membership-required=\"{{.}}\"\n\t\t{{\/membership_required}}\n\t\tclass=\"wsite-menu-item\"\n\t\t>\n\t\t{{{title_html}}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n","navigation\/flyout\/list":"<div class=\"wsite-menu-wrap\" style=\"display:none\">\n\t<ul class=\"wsite-menu\">\n\t\t{{#children}}{{> navigation\/flyout\/item}}{{\/children}}\n\t<\/ul>\n<\/div>\n","navigation\/flyout\/item":"<li {{#id}}id=\"{{id}}\"{{\/id}}\n\tclass=\"wsite-menu-subitem-wrap {{#is_current}}wsite-nav-current{{\/is_current}}\"\n\t>\n\t<a\n\t\t{{^nonclickable}}\n\t\t\t{{^nav_menu}}\n\t\t\t\thref=\"{{url}}\"\n\t\t\t{{\/nav_menu}}\n\t\t{{\/nonclickable}}\n\t\t{{#target}}\n\t\t\ttarget=\"{{target}}\"\n\t\t{{\/target}}\n\t\tclass=\"wsite-menu-subitem\"\n\t\t>\n\t\t<span class=\"wsite-menu-title\">\n\t\t\t{{{title_html}}}\n\t\t<\/span>{{#has_children}}<span class=\"wsite-menu-arrow\">&gt;<\/span>{{\/has_children}}\n\t<\/a>\n\t{{#has_children}}{{> navigation\/flyout\/list}}{{\/has_children}}\n<\/li>\n"},
+			{}
+		)
+	}
+//-->
+</script>
+		
+		
+	</head>
+	<body class="no-header-page  wsite-theme-light  wsite-page-198-bivariate-data-analysis"><div id="header-wrap">
+        <div class="container">
+            <table id="header">
+                <tr>
+					<!-- This google Play module was added in manually-->
+					<td> 
+						<a href='https://play.google.com/store/apps/details?id=us.mathlab.android&referrer=utm_source%3Dhelp.mathlab.us%26utm_campaign%3Dbadge'>
+							<img alt='Get it on Google Play' src='http://i.imgur.com/oKnySJO.png'/>
+						</a> 
+					</td>
+				<td>
+					
+					<!-- This div was added in, not part of Weebly's html generation -->
+					<div>
+						<div id="logo"><span class="wsite-logo">
+
+	<a href="">
+	
+	<span id="wsite-title">Graphing Calculator by Mathlab:<br />User Manual</span>
+	
+	</a>
+
+</span></div> 
+						
+						<!-- This google translate element has been added in manually as well as the appliv description-->
+						<div id="google_translate_element"></div>
+					</div>
+					
+				</td>
+				<!-- This is a manually inserted link, not part of Weebly's html generation -->
+				<td> <a href="http://app-liv.com/android/en/1163961" target="_blank"><img src="http://img.app-liv.com/link/appliv_s_b.png" alt="Appliv -iPhone/Android App Discovery Website" /></a> </td>
+                </tr>
+            </table>
+			<!-- End of inserted content -->
+        </div><!-- end container -->
+    </div><!-- end header-wrap -->  
+
+    <div id="nav-wrap">
+        <div class="container">
+			<table id="nav-table">
+				<tr>
+					<td><ul class="wsite-menu-default">
+		<li id="pg494836927354099638" class="wsite-menu-item-wrap">
+			<a
+						href="index.html"
+				class="wsite-menu-item"
+				>
+				Home
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-684710665852164319"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="introduction.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Introduction
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-687325723872576877"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="pro-features-vs-free-version.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			PRO Features vs. FREE Version
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-323475930379009422"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="frequently-asked-questions-faqs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			Frequently Asked Questions, FAQs
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-234749722727115307"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1-how-to-change-the-number-format.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.  How to Change the Number Format?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-979919231116481114"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="2-how-to-set-up-the-separators-between-thousands.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2. How to Set Up the Separators Between Thousands?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-174878895925322197"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="3-how-to-set-precision.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3. How to Set Precision?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-808607238985491609"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="4-how-to-send-feedback-with-comments.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4. How to Send Feedback with Comments?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-253756257113592003"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="5-how-to-importexport-the-library.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5. How to import/export the library?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-435505182125695812"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6-how-to-print-results.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6. How to Print Results?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-653903549223166395"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="7-how-to-make-the-calculator-show-the-results.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7. How to Make the Calculator Show the Results?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-287321938794324071"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="8-how-to-transport-calculation-results-to-other-programs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8. How to Transport Calculation Results to other Programs?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-988398427280486121"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="9-how-to-transport-table-to-other-platforms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9. How to Transport Table to Other Platforms?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-466602375186553544"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="10-how-to-turn-off-or-on-vibration.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10. How to Turn Off (or on) Vibration?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-252362636866551634"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="11-how-to-change-the-language.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11. How to Change the Language?
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg666165700224662807" class="wsite-menu-item-wrap">
+			<a
+						href="1-basics.html"
+				class="wsite-menu-item"
+				>
+				1. Basics
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-394827999878312292"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="11-navigation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.1. Navigation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-360351905525779118"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="12-ui-elements.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.2. UI Elements
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-206651792168766254"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="13-keyboard.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.3. Keyboard
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-428099876497246146"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="14-input-enter-delete-clear-and-undo-buttons.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.4. Input, Enter, Delete, Clear and UNDO Buttons
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-947796775295041953"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="15-workspace-area.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.5. Workspace Area
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-569054740981269259"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="16-editing-the-expressionequation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.6. Editing the Expression/Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-818724490405313299"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="17-using-the-last-answer.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.7. Using the Last Answer
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-677309092927922602"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="18-writing-comments.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.8. Writing Comments
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-605917561942817175"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="19-clear-copy--paste-commands.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.9. Clear, Copy & Paste Commands
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-216297645385197168"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="110-rearranging-rows.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			1.10. Rearranging Rows
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg968467971849662187" class="wsite-menu-item-wrap">
+			<a
+						href="2-settings.html"
+				class="wsite-menu-item"
+				>
+				2. Settings
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-671322958888814984"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="21-general.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.1. General
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-934366752913330015"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="22-calculator.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.2. Calculator
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-308065625763490860"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="23-graph.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			2.3. Graph
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg987300793632090636" class="wsite-menu-item-wrap">
+			<a
+						href="3-library.html"
+				class="wsite-menu-item"
+				>
+				3. Library
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-170157802703483186"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="31-constants.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.1. Constants
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-592321062923411896"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="32-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.2. Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-321413251749203826"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="33-how-to-save-calculation-resultgraph-to-library.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			3.3. How to Save Calculation Result/Graph to Library?
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg168005519445418851" class="wsite-menu-item-wrap">
+			<a
+						href="4-graph-mode.html"
+				class="wsite-menu-item"
+				>
+				4. Graph Mode
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-307986321889832176"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="41-2d-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.1. 2D Graphing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-986541576415209658"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="42-3d-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.2. 3D Graphing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-431039210336782332"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="43-enlarging-the-graph-area.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.3. Enlarging the Graph Area
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-919130908291345963"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="44-changing-to-white-background.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.4. Changing to White Background
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-398883164741712789"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="45-hide-keyboard.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.5. Hide Keyboard
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-898634439630590049"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="46-degree-and-radian-scales.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.6. Degree and Radian Scales
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-697422058120603474"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="47-fixed-scale.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.7. Fixed Scale
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-418227556791172507"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="48-r-axis-scale.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.8. R-axis Scale
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-821795316473287935"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="49-logarithmic-scale.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.9. Logarithmic Scale
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-145952067655508009"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="410-tracing-values-and-slopes.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.10. Tracing Values and Slopes
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-859071113771942870"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="411-special-points-roots-and-criticals.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.11. Special Points: Roots and Criticals
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-648783183463698077"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="412-intersections-of-graphs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.12. Intersections of Graphs
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-366885285609567894"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="413-set-domain.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.13. Set Domain
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-340626002424710660"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="414-show-all---roots-critical-points-and-intersections.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.14. Show All - Roots, Critical Points and Intersections
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-662015072187058276"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="415-fullscreen.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			4.15. Fullscreen
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg733521370970587220" class="wsite-menu-item-wrap">
+			<a
+						href="5-table-mode.html"
+				class="wsite-menu-item"
+				>
+				5. Table Mode
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-317323027430823455"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="51-sharing-of-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.1. Sharing of Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-395110992740506525"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="52-2d-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.2. 2D Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-632600935859744925"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="53-3d-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.3. 3D Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-402681197473421324"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="54-edit-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.4. Edit Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-158421982999522369"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="55-scroll-results.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.5. Scroll Results
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-815137646886180785"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="56-results-precision.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.6. Results Precision
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-458243842398852810"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="57-zoom-controls.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.7. Zoom Controls
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-944387626424070411"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="58-save-and-load-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.8. Save and Load Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-548027393374389210"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="59-table-of-trigonometric-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			5.9. Table of Trigonometric Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg304761841283070016" class="wsite-menu-item-wrap">
+			<a
+						href="6-numbers-and-number-sense.html"
+				class="wsite-menu-item"
+				>
+				6. Numbers and Number Sense
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-133420841879859676"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="61-decimals.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.1. Decimals
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-309442815600408963"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="62-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2. Fractions
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-516188884667485371"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="621-mixed-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.1. Mixed Fractions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-136028412220639514"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="622-complex-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.2. Complex Fractions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-976647689899263175"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="623-converting-decimals-to-fractions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.3. Converting Decimals to Fractions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-819354715979155621"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="624-converting-fractions-to-decimals.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.2.4. Converting Fractions to Decimals
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-218680343674388842"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="63-percents.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.3. Percents
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-703269517849615091"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="64-scientific-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.4. Scientific Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-548806218518137890"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="65-engineering-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.5. Engineering Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-371380081594043926"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="66-rounding-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.6. Rounding Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-701953590580476177"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="67-integer-and-fractional-parts.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7. Integer and Fractional Parts
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-382130296833105419"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="671-integer-part-of-a-number.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1. Integer Part of a Number
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-154866060267313455"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6711-ceiling.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.1. Ceiling
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-835955404341958512"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6712-floor.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.2. Floor
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-655099597190170936"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6713-half-down.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.3. Half Down
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-132891119932638874"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6714-half-to-even.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.4. Half to Even
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-304468195794896780"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6715-half-to-infinity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.5. Half to Infinity
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-892672997246330802"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6716-half-to-odd.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.6. Half to Odd
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-546488144401187859"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6717-half-to-zero.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.7.  Half to Zero
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-900120224572283346"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6718-half-up.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.8. Half Up
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447655661310342583"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="6719-truncate.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.1.9. Truncate
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-346980138388893987"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="672-greatest-integer-is-the-floor-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.2. Greatest Integer is the Floor Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-297371597643175838"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="673-least-integer-is-the-ceiling-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.3. Least Integer is the Ceiling Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-695355473561839527"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="674-fractional-part-of-a-number.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.7.4. Fractional Part of a Number
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-661954720781707343"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="68-order-of-operations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.8. Order of Operations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-563310715183558080"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="69-least-common-multiple.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.9. Least Common Multiple
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-655726180943902621"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="610-greatest-common-divisor.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.10. Greatest Common Divisor
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-741163809434290972"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="611-modulo.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.11.  Modulo
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-165348835407208622"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="612-binary-octal-decimal-hexadecimal-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.12. Binary, Octal, Decimal, Hexadecimal Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-162705388672023216"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="613-complex-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.13. Complex Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-845347489189885331"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="614-the-polar-form-of-complex-numbers.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.14. The Polar Form of Complex Numbers
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-276386934953186252"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="615-polar-to-rectangular-coordinates.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			6.15. Polar to Rectangular Coordinates
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg582575439157745955" class="wsite-menu-item-wrap">
+			<a
+						href="7-introductory-algebra.html"
+				class="wsite-menu-item"
+				>
+				7. Introductory Algebra
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-754105586663612329"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="71-arithmetic-operations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.1. Arithmetic Operations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-575993092779109992"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="72-exponents.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.2. Exponents
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-901015643396158327"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="73-absolute-values.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.3. Absolute Values
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-243002733113289939"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="74-variables.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.4. Variables
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-172919213333790220"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="75-evaluating-expressions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.5. Evaluating Expressions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-884875953976206581"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="76-polynomials.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.6. Polynomials
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-946791234545533219"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="77-roots.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.7. Roots
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-782049735527216791"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="78-logarithms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			7.8. Logarithms
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg343940256525908488" class="wsite-menu-item-wrap">
+			<a
+						href="8-equations-in-one-variable.html"
+				class="wsite-menu-item"
+				>
+				8. Equations in One Variable
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-936873800490378436"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="81-linear-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.1. Linear Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-459795111193880324"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="82-absolute-value-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.2. Absolute Value Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-920457574941109857"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="83-quadratic-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.3. Quadratic Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-407997787411981553"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="84-cubic-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.4. Cubic Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-774276685862374234"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="85-polynomial-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.5. Polynomial Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-543264073610220377"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="86-rational-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.6. Rational Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-865203710747633095"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="87-radical-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.7. Radical Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-162593597428723526"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="88-exponential-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.8. Exponential Equation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-447180043303146129"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="89-logarithmic-equation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			8.9. Logarithmic Equation
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg257870702632853624" class="wsite-menu-item-wrap">
+			<a
+						href="9-inequalities-in-one-variable.html"
+				class="wsite-menu-item"
+				>
+				9. Inequalities in One Variable
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-829419249139658715"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="91-inequality-symbols.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.1. Inequality Symbols
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-477796787341153847"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="92-linear-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.2. Linear Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-661434620749462445"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="93-absolute-value-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.3. Absolute Value Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-744019217831557729"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="94-quadratic-inequality.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.4. Quadratic Inequality
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-557891156148948162"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="95-polynomial-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.5.  Polynomial Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-540948176516187904"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="96-rational-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.6. Rational Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-570936225468636752"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="97-compound-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.7. Compound Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-832908249288787909"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="98-inequalities-with-constants.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			9.8. Inequalities with Constants
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg834107861543571539" class="wsite-menu-item-wrap">
+			<a
+						href="10-equations-and-inequalities-in-two-variables.html"
+				class="wsite-menu-item"
+				>
+				10. Equations and Inequalities in Two Variables
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-678170082853057258"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="101-linear-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.1. Linear Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-992175026314334812"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="102-systems-of-linear-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.2. Systems of Linear Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-945765925885687536"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="103-graphing-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.3. Graphing Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-500205564128213454"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="104-multiple-graphing-of-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.4. Multiple Graphing of Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-697115097252593524"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="105-graphing-systems-of-inequalities.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.5. Graphing Systems of Inequalities
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-823774486677608930"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="106-solving-implicit-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			10.6. Solving Implicit Equations
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg433078594708793770" class="wsite-menu-item-wrap">
+			<a
+						href="11-algebraic-functions-and-graphs.html"
+				class="wsite-menu-item"
+				>
+				11. Algebraic Functions and Graphs
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-598307137505495346"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="111-plotting-points.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.1. Plotting Points
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-910329565415715303"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="112-how-to-graph-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.2. How to Graph Functions?
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-481217698972063059"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="113-setting-the-applied-domain.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.3. Setting the Applied Domain
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-970536912717699496"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="114-linear-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.4. Linear Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-512327631450616085"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="115-absolute-value-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.5. Absolute Value Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-565050874240174596"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="116-quadratic-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.6. Quadratic Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-674892466129509418"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="117-polynomial-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.7. Polynomial Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-603836568170015414"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="118-rational-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.8. Rational Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-696508367181165666"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="119-radical-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.9. Radical Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-293241961710438396"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1110-logarithmic-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.10. Logarithmic Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-876201967545969080"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1111-exponential-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.11. Exponential Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-219594703182619417"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1112-sign-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.12. Sign Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-201549654671042607"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1113-multiple-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.13. Multiple Graphing
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-504084811759600096"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1114-piecewise-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			11.14. Piecewise Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg336146427611147363" class="wsite-menu-item-wrap">
+			<a
+						href="12-matrices-and-vectors.html"
+				class="wsite-menu-item"
+				>
+				12. Matrices and Vectors
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-365649865904424058"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="121-matrix-operations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.1. Matrix Operations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-387948584948386544"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="122-editing-matrix-entries.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.2. Editing Matrix Entries
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-930338605436393168"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="123-matrix-variables.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.3. Matrix Variables
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-741178430629723862"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="124-matrix-and-vector-forms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.4. Matrix and Vector Forms
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-823782585218344181"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="125-variable-matrix-to-system-of-linear-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.5. Variable Matrix to System of Linear Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-560625352675921555"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="126-solving-systems-of-linear-equations-using-matrix-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			12.6. Solving Systems of Linear Equations Using Matrix Equations
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg568762772342978052" class="wsite-menu-item-wrap">
+			<a
+						href="13-trigonometric-functions-and-their-inverses.html"
+				class="wsite-menu-item"
+				>
+				13. Trigonometric Functions and Their Inverses
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-692336712153288897"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="131-degrees-and-radians.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.1. Degrees and Radians
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-634003183717741539"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1311-degrees-minutes-and-seconds.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.1.1. Degrees, Minutes and Seconds
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-868856033330263983"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1312-bradis-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.1.2. Bradis Table
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-130382301456327054"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="132-trigonometric-function-keys.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.2. Trigonometric Function Keys
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-696050955599742729"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="133-trigonometric-values-of-special-angles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3. Trigonometric Values of Special Angles
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-524612744371709437"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1331-the-45--45---90-triangle.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.1. The 45- 45 - 90 Triangle
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-680927174901419664"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1332-the-30-60-90-triangle.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.2. The 30-60-90 Triangle
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-821356029820885968"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1333-quadrantal-angles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.3. Quadrantal Angles
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-237041173415201293"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1334-coterminal-angles.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.3.4. Coterminal Angles
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-782096697363035277"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="134-trigonometric-values-of-15-degrees-and-its-multiples.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.4. Trigonometric Values of 15 Degrees and Its Multiples
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-692891466249753108"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="135-hyperbolic-function-keys.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.5. Hyperbolic Function Keys
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-894204970915930915"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="136-graphing-trigonometric-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.6. Graphing Trigonometric Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-802715518918109637"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="137-graphing-hyperbolic-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.7. Graphing Hyperbolic Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-831328955641006141"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="138-graphing-inverse-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			13.8. Graphing Inverse Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg986517263631860764" class="wsite-menu-item-wrap">
+			<a
+						href="14-analytic-geometry.html"
+				class="wsite-menu-item"
+				>
+				14. Analytic Geometry
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-322915204949469374"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="141-conic-sections.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.1. Conic Sections
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-231304736704487768"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="142-parametric-equations.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.2. Parametric Equations
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-965397543782177870"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="143-polar-graphs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3. Polar Graphs
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-373148663388506895"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1431-limacon.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.1. Limacon
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-753327372178553066"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1432-cardioid.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.2. Cardioid
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-368967417290624038"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1433-lemniscate.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.3. Lemniscate
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-861282168561381987"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1434-rose.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.4. Rose
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-921204374710009894"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1435-other-polar-graphs.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.3.5. Other Polar Graphs
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-600176483438295150"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="144-3d-graphing.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			14.4. 3D Graphing
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg809315539647968618" class="wsite-menu-item-wrap">
+			<a
+						href="15-limits.html"
+				class="wsite-menu-item"
+				>
+				15. Limits
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-676650799380127215"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="151-right---hand-limit.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.1. Right - hand Limit
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-639357053516998823"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="152-left---hand-limit.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.2. Left - hand Limit
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-928220416209615680"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="153-limit-of-a-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.3. Limit of a Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-538444232367478326"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="154-limit-of-a-polynomial-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.4. Limit of a Polynomial Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-573032162600384844"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="155-limit-of-a-rational-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.5. Limit of a Rational Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-130249620865732299"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="156-limit-of-a-radical-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.6. Limit of a Radical Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-339079824589560372"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="157-limit-of-an-absolute-value-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.7. Limit of an Absolute Value Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-495167947717716997"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="158-limit-of-a-trigonometric-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.8. Limit of a Trigonometric Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-625283135388003451"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="159-limit-of-an-exponential-and-logarithmic-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.9. Limit of an Exponential and Logarithmic Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-616777965564460804"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1510-limit-of-a-piece-wise-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.10. Limit of a Piece-wise Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-995085571338569754"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1511-limits-at-infinity.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.11. Limits at Infinity
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-676233851987504664"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1512-indeterminate-forms.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.12. Indeterminate Forms
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-944811962384789188"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1513-limit-of-a-hyperbolic-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			15.13. Limit of a Hyperbolic Function
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg622870541659906761" class="wsite-menu-item-wrap">
+			<a
+						href="16-derivatives.html"
+				class="wsite-menu-item"
+				>
+				16. Derivatives
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-442607340983082679"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="161-first-derivative-key.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.1. First Derivative Key
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-998121817449862849"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="162-second-derivative-key.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.2. Second Derivative Key
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-112526188887191531"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="163-third-and-higher-derivative-keys.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.3. Third and Higher Derivative Keys
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-847701761359394859"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="164-rules-of-differentiation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.4. Rules of Differentiation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-852165611374160284"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="165-derivatives-of-polynomial-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.5. Derivatives of Polynomial Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-465622605968900493"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="166-derivatives-of-rational-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.6. Derivatives of Rational Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-984202925694036761"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="167-dervatives-of-trigonometric-logarithmic-and-and-exponential-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.7. Dervatives of Trigonometric, Logarithmic and and Exponential Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-529697346438250980"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="168-more-on-derivatives.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			16.8. More on Derivatives
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg737099774911119901" class="wsite-menu-item-wrap">
+			<a
+						href="17-partial-derivatives.html"
+				class="wsite-menu-item"
+				>
+				17. Partial Derivatives
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-849498413759856429"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="171-increments.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.1. Increments
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-789771136209486432"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="172-dervative-of-a-function-df-or-dy.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.2. Dervative of a Function df  (or dy))
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-478657008927010302"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="173-derivative-of-a-function-df-f-not-in-terms-of-x.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.3. Derivative of a Function df (f not in terms of x)
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-777014641750098179"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="174-partial-derivatives.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.4. Partial Derivatives
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-658418568726631758"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="175-higher-order-partial-derivatives.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.5. Higher Order Partial Derivatives
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-961379766438890573"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="176-total-derivates.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			17.6. Total Derivates
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg494939315433513104" class="wsite-menu-item-wrap">
+			<a
+						href="18-definite-integral.html"
+				class="wsite-menu-item"
+				>
+				18. Definite Integral
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-235274034952164498"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="181-definite-integral-of-algebraic-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			18.1. Definite Integral of Algebraic Functions
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-547176219976455825"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="182-definite-integral-of-trigonometric-functions.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			18.2. Definite Integral of Trigonometric Functions
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg947990530193219242" class="wsite-menu-item-wrap">
+			<a
+						href="19-basic-statistics.html"
+				class="wsite-menu-item"
+				>
+				19. Basic Statistics
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-177516652811722414"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="191-summation-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.1. Summation Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-575034705702079231"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="192-product-notation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.2. Product Notation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-412770694750402929"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="193-minimum-and-maximum.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.3. Minimum and Maximum
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-118690554122532600"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="194-factorial-ncr-and-npr.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.4. Factorial, nCr and nPr
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-562573198479479985"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="195-measures-of-central-tendency.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5. Measures of Central Tendency
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-119844467994913384"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1951-mean-from-ungrouped-data-set.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.1. Mean from Ungrouped Data Set
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-326666280695129546"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1952-mean-from-frequency-distribution-table.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.2. Mean from Frequency Distribution Table
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-170065214242849335"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1953-median-from-ungrouped-data-set.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.3. Median from Ungrouped Data Set
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-735352278252654534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1954-mode.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.5.4. Mode
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-901357026466622645"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="196-measures-of-variability.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6. Measures of Variability
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-117080973540380188"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1961-range.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.1. Range
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-781085078195806315"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1962-interquartile-range-and-quartile-deviation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.2. Interquartile Range and Quartile Deviation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-251184091782751275"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1963-mean-absolute-deviation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.3. Mean Absolute Deviation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-272856058686504227"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1964-variance-and-standard-deviation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.4. Variance and Standard Deviation
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-734636258784175774"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1965-coefficient-of-variation.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.6.5. Coefficient of Variation
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+<li id="wsite-nav-374497556870918431"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="197-measures-of-position.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.7. Measures of Position
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-282737661863809942"
+	class="wsite-menu-subitem-wrap wsite-nav-current"
+	>
+	<a
+				href="198-bivariate-data-analysis.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8. Bivariate Data Analysis
+		</span><span class="wsite-menu-arrow">&gt;</span>
+	</a>
+	<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-867938904284817473"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1981-covariance.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8.1 Covariance
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-660426631502681015"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1982-correlation-coefficient.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8.2. Correlation Coefficient
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-149259474261564324"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="1983-scatterplot-and-regression-line.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			19.8.3. Scatterplot and Regression Line
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg794264524115728390" class="wsite-menu-item-wrap">
+			<a
+						href="20-special-functions.html"
+				class="wsite-menu-item"
+				>
+				20. Special Functions
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-565534533178476126"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="201-gamma-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			20.1. Gamma Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-271826537847110909"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="202-logarithmic-gamma-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			20.2. Logarithmic Gamma Function
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-880609011305329237"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="203-digamma-function.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			20.3. Digamma Function
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+		<li id="pg204407189693645026" class="wsite-menu-item-wrap">
+			<a
+						href="21-list-of-all-functions.html"
+				class="wsite-menu-item"
+				>
+				21. List of ALL Functions
+			</a>
+			<div class="wsite-menu-wrap" style="display:none">
+	<ul class="wsite-menu">
+		<li id="wsite-nav-654853158709099079"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="211-arithmetics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.1. Arithmetics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-143235216303558948"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="212-algebra.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.2. Algebra
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-534071094259778534"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="213-trigonometry.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.3. Trigonometry
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-855296132451721013"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="214-statistics.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.4. Statistics
+		</span>
+	</a>
+	
+</li>
+<li id="wsite-nav-513066159205928399"
+	class="wsite-menu-subitem-wrap "
+	>
+	<a
+				href="215-calculus.html"
+		class="wsite-menu-subitem"
+		>
+		<span class="wsite-menu-title">
+			21.5. Calculus
+		</span>
+	</a>
+	
+</li>
+
+	</ul>
+</div>
+
+		</li>
+</ul>
+</td>
+					<td class="header-right">
+						<table>
+							<tr>
+								<td class="phone-number"></td>
+								<td class="search"></td>
+							</tr>
+						</table>
+					</td>
+				</tr>				
+			</table>
+			<!-- Developer: Vadim Pelyushenko-->
+			<!-- <gcse:search></gcse:search> this doesn't appear to work outside of thijs code editor-->
+			<!-- This gcse works with the script in the bottom of this document-->
+        </div><!-- end container -->
+    </div><!-- end nav-wrap -->
+    <div id="banner-wrap">
+        <div class="container">
+            <div id="banner">
+            
+                <div style="clear:both;"></div>
+            
+            </div><!-- end banner -->
+        </div><!-- end container -->
+    </div><!-- end banner-wrap -->
+
+    <div id="main-wrap">
+        <div class="container">
+   			<div id="wsite-content" class="wsite-elements wsite-not-footer">
+	<div><div id="187127884943918242" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><!doctype html><html><head></head><body leftMargin="0" topMargin="0" marginwidth="0" marginheight="0"><script>(function(){var g=this,l=function(a,b){var c=a.split("."),d=g;c[0]in d||!d.execScript||d.execScript("var "+c[0]);for(var e;c.length&&(e=c.shift());)c.length||void 0===b?d=d[e]?d[e]:d[e]={}:d[e]=b},m=function(a,b,c){return a.call.apply(a.bind,arguments)},n=function(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}},p=function(a,b,c){p=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?m:n;return p.apply(null,arguments)},q=Date.now||function(){return+new Date};var r=document,s=window;var t=function(a,b){for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(null,a[c],c,a)},w=function(a,b){a.google_image_requests||(a.google_image_requests=[]);var c=a.document.createElement("img");c.src=b;a.google_image_requests.push(c)};var x=function(a){return{visible:1,hidden:2,prerender:3,preview:4}[a.webkitVisibilityState||a.mozVisibilityState||a.visibilityState||""]||0},y=function(a){var b;a.mozVisibilityState?b="mozvisibilitychange":a.webkitVisibilityState?b="webkitvisibilitychange":a.visibilityState&&(b="visibilitychange");return b};var C=function(){this.g=r;this.k=s;this.j=!1;this.i=null;this.h=[];this.o={};if(z)this.i=q();else if(3==x(this.g)){this.i=q();var a=p(this.q,this);A&&(a=A("di::vch",a));this.p=a;var b=this.g,c=y(this.g);b.addEventListener?b.addEventListener(c,a,!1):b.attachEvent&&b.attachEvent("on"+c,a)}else B(this)},A;C.m=function(){return C.n?C.n:C.n=new C};var D=/^([^:]+:\/\/[^/]+)/m,G=/^\d*,(.+)$/m,z=!1,B=function(a){if(!a.j){a.j=!0;for(var b=0;b<a.h.length;++b)a.l.apply(a,a.h[b]);a.h=[]}};C.prototype.s=function(a,b){var c=b.target.u();(c=G.exec(c))&&(this.o[a]=c[1])};C.prototype.l=function(a,b){this.k.rvdt=this.i?q()-this.i:0;var c;if(c=this.t)t:{try{var d=D.exec(this.k.location.href),e=D.exec(a);if(d&&e&&d[1]==e[1]&&b){var f=p(this.s,this,b);this.t(a,f);c=!0;break t}}catch(u){}c=!1}c||w(this.k,a)};C.prototype.q=function(){if(3!=x(this.g)){B(this);var a=this.g,b=y(this.g),c=this.p;a.removeEventListener?a.removeEventListener(b,c,!1):a.detachEvent&&a.detachEvent("on"+b,c)}};var H=/^true$/.test("")?!0:!1;var I={},J=function(a){var b=a.toString();a.name&&-1==b.indexOf(a.name)&&(b+=": "+a.name);a.message&&-1==b.indexOf(a.message)&&(b+=": "+a.message);if(a.stack){a=a.stack;var c=b;try{-1==a.indexOf(c)&&(a=c+"\n"+a);for(var d;a!=d;)d=a,a=a.replace(/((https?:\/..*\/)[^\/:]*:\d+(?:.|\n)*)\2/,"$1");b=a.replace(/\n */g,"\n")}catch(e){b=c}}return b},M=function(a,b,c,d){var e=K,f,u=!0;try{f=b()}catch(h){try{var N=J(h);b="";h.fileName&&(b=h.fileName);var E=-1;h.lineNumber&&(E=h.lineNumber);var v;t:{try{v=c?c():"";break t}catch(S){}v=""}u=e(a,N,b,E,v)}catch(k){try{var O=J(k);a="";k.fileName&&(a=k.fileName);c=-1;k.lineNumber&&(c=k.lineNumber);K("pAR",O,a,c,void 0,void 0)}catch(F){L({context:"mRE",msg:F.toString()+"\n"+(F.stack||"")},void 0)}}if(!u)throw h;}finally{if(d)try{d()}catch(T){}}return f},K=function(a,b,c,d,e,f){a={context:a,msg:b.substring(0,512),eid:e&&e.substring(0,40),file:c,line:d.toString(),url:r.URL.substring(0,512),ref:r.referrer.substring(0,512)};P(a);L(a,f);return!0},L=function(a,b){try{if(Math.random()<(b||.01)){var c="/pagead/gen_204?id=jserror"+Q(a),d="http"+("https:"==s.location.protocol?"s":"")+"://pagead2.googlesyndication.com"+c,d=d.substring(0,2E3);w(s,d)}}catch(e){}},P=function(a){var b=a||{};t(I,function(a,d){b[d]=s[a]})},R=function(a,b,c,d,e){return function(){var f=arguments;return M(a,function(){return b.apply(c,f)},d,e)}},Q=function(a){var b="";t(a,function(a,d){if(0===a||a)b+="&"+d+"="+("function"==typeof encodeURIComponent?encodeURIComponent(a):escape(a))});return b};A=function(a,b,c,d){return R(a,b,void 0,c,d)};z=H;l("vu",R("vu",function(a,b){var c=a.replace("&amp;","&"),d=/(google|doubleclick).*\/pagead\/adview/.test(c),e=C.m();if(d){d="&vis="+x(e.g);b&&(d+="&ve=1");var f=c.indexOf("&adurl"),c=-1==f?c+d:c.substring(0,f)+d+c.substring(f)}e.j?e.l(c,b):e.h.push([c,b])}));l("vv",R("vv",function(){z&&B(C.m())}));})();</script><script>vu("https://googleads.g.doubleclick.net/pagead/adview?ai\x3dCk4a7bZWqVqS-HImt8gXfjL2oB4r1vfID-sXu1lrAjbcBEAEgAGDhxLkFggEXY2EtcHViLTU4NjUzMTE4NzUyMjc1MzbIAQmpAuxCY3q8aYQ-qAMBqgReT9AtcxcFEwrlywj_ADWzoRqQfQYqUHVWTLf1lfh1xaXG6t0uryD8HSBzi8sAyNnYNq8cyVPA-nAomjMxfDBlho3rUhY7Taawy51YiXlO-65remee7rm4e-GW7IgU6IAGk5rx2ZLzusaAAaAGIdgHAA\x26sigh\x3dM1Mq1Z0TCLE")</script><SCRIPT language="JavaScript1.1" SRC="https://bid.g.doubleclick.net/xbbe/creative/adj?d=APEucNV9ONT6qRRCzOUSy-4ze7WwHVk4L9AT1CSk5ksKoVvNBa6_e_DEAs20cIFDgGFQOZNLYw_gkrAEMBJP1Jy82XoYnr16i90NGeCm79ZHzWxeqoye_ARPrbklNHbh9DVeR8wKTk1pW1O3cDMI3nq-InJYDiy8WltaByVGhLlW9-y9bd1rwvHxhrPPx6qQL5TObBY4GI8MbAs--2x38i7b2DxWU0yXr2oiXPQXIBDYt8YnvyY9sDP7sk0liR1u3_mET76xcclLoaqOVuUERjodmcujiXD0bIO8muoJcIITUvifuzEDbpX4bWwROh-TQyO7kD6HkLkcSTR1gg1ozUn8rNneQYa1ow&pr=VqqVbQAHHyQKvJaJAA9GX73or0HGr10TOodLlQ&c=https://adclick.g.doubleclick.net/aclk%3Fsa%3DL%26ai%3DCk4a7bZWqVqS-HImt8gXfjL2oB4r1vfID-sXu1lrAjbcBEAEgAGDhxLkFggEXY2EtcHViLTU4NjUzMTE4NzUyMjc1MzbIAQmpAuxCY3q8aYQ-qAMBqgReT9AtcxcFEwrlywj_ADWzoRqQfQYqUHVWTLf1lfh1xaXG6t0uryD8HSBzi8sAyNnYNq8cyVPA-nAomjMxfDBlho3rUhY7Taawy51YiXlO-65remee7rm4e-GW7IgU6IAGk5rx2ZLzusaAAaAGIdgHAA%26num%3D1%26sig%3DAOD64_2KPnLuh4UCOVnWB2cnTkjjs-3HUg%26client%3Dca-pub-5865311875227536%26adurl%3D"></SCRIPT><NOSCRIPT><A HREF="https://adclick.g.doubleclick.net/aclk?sa=L&ai=Ck4a7bZWqVqS-HImt8gXfjL2oB4r1vfID-sXu1lrAjbcBEAEgAGDhxLkFggEXY2EtcHViLTU4NjUzMTE4NzUyMjc1MzbIAQmpAuxCY3q8aYQ-qAMBqgReT9AtcxcFEwrlywj_ADWzoRqQfQYqUHVWTLf1lfh1xaXG6t0uryD8HSBzi8sAyNnYNq8cyVPA-nAomjMxfDBlho3rUhY7Taawy51YiXlO-65remee7rm4e-GW7IgU6IAGk5rx2ZLzusaAAaAGIdgHAA&num=1&sig=AOD64_2KPnLuh4UCOVnWB2cnTkjjs-3HUg&client=ca-pub-5865311875227536&adurl=https://bid.g.doubleclick.net/xbbe/creative/jump%3Fd%3DAPEucNV9ONT6qRRCzOUSy-4ze7WwHVk4L9AT1CSk5ksKoVvNBa6_e_DEAs20cIFDgGFQOZNLYw_gkrAEMBJP1Jy82XoYnr16i90NGeCm79ZHzWxeqoye_ARPrbklNHbh9DVeR8wKTk1pW1O3cDMI3nq-InJYDiy8WltaByVGhLlW9-y9bd1rwvHxhrPPx6qQL5TObBY4GI8MbAs--2x38i7b2DxWU0yXr2oiXPQXIBDYt8YnvyY9sDP7sk0liR1u3_mET76xcclLoaqOVuUERjodmcujiXD0bIO8muoJcIITUvifuzEDbpX4bWwROh-TQyO7kD6HkLkcSTR1gg1ozUn8rNneQYa1ow"><IMG SRC="https://bid.g.doubleclick.net/xbbe/creative/ad?d=APEucNV9ONT6qRRCzOUSy-4ze7WwHVk4L9AT1CSk5ksKoVvNBa6_e_DEAs20cIFDgGFQOZNLYw_gkrAEMBJP1Jy82XoYnr16i90NGeCm79ZHzWxeqoye_ARPrbklNHbh9DVeR8wKTk1pW1O3cDMI3nq-InJYDiy8WltaByVGhLlW9-y9bd1rwvHxhrPPx6qQL5TObBY4GI8MbAs--2x38i7b2DxWU0yXr2oiXPQXIBDYt8YnvyY9sDP7sk0liR1u3_mET76xcclLoaqOVuUERjodmcujiXD0bIO8muoJcIITUvifuzEDbpX4bWwROh-TQyO7kD6HkLkcSTR1gg1ozUn8rNneQYa1ow&pr=VqqVbQAHHyQKvJaJAA9GX73or0HGr10TOodLlQ" BORDER=0 WIDTH=728 HEIGHT=90 ALT="Advertisement"></A></NOSCRIPT><script type="text/javascript">  if ('') {  document.write('<script src="https://c.betrad.com/surly.js?;ad_w=728;ad_h=90;coid=322;nid=4311;cps="></sc' + 'ript>');  }</script><iframe src="https://googleads.g.doubleclick.net/xbbe/pixel?d=CMvzLxCSsDEY_Z7MCA&v=APEucNUMpHl2aLUfpq8sT1utZnJdNE1Hwl3ELSQ-d9YCrjUrf1l8jzp4jqfkbbypCHk6iVs7COqi7ljnryqOCBnJLcaMThAqlWUe1Ha-1hyD4Xf9t8oMdr4" style="display:none"></iframe><DIV STYLE="position: absolute; left: 0px; top: 0px; visibility: hidden;"><IMG SRC="https://bid.g.doubleclick.net/xbbe/beacon?data=APEucNXiI38D2DBwjNjP40lp3KI9ppv0aGTQ1IJN1_sGcacLiHz5KSpQN1hbTaXkI1gIHj7_cNGh2E6-GLxaoiKNNfeXAm7PDA" BORDER=0 WIDTH=1 HEIGHT=1 ALT="" STYLE="display:none"></DIV><script>(function(){var g,k=this,aa=function(a,b,c){return a.call.apply(a.bind,arguments)},ba=function(a,b,c){if(!a)throw Error();if(2<arguments.length){var d=Array.prototype.slice.call(arguments,2);return function(){var c=Array.prototype.slice.call(arguments);Array.prototype.unshift.apply(c,d);return a.apply(b,c)}}return function(){return a.apply(b,arguments)}},l=function(a,b,c){l=Function.prototype.bind&&-1!=Function.prototype.bind.toString().indexOf("native code")?aa:ba;return l.apply(null,arguments)},m=Date.now||function(){return+new Date};var n=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")},p=function(a,b){return a<b?-1:a>b?1:0};var q=function(a){return Array.prototype.concat.apply(Array.prototype,arguments)},ca=function(a){var b=a.length;if(0<b){for(var c=Array(b),d=0;d<b;d++)c[d]=a[d];return c}return[]};var r;a:{var t=k.navigator;if(t){var u=t.userAgent;if(u){r=u;break a}}r=""}var v=function(a){return-1!=r.indexOf(a)};var w=function(a,b,c){a.addEventListener?a.addEventListener(b,c,!1):a.attachEvent&&a.attachEvent("on"+b,c)};var da=v("Opera")||v("OPR"),x=v("Trident")||v("MSIE"),ea=v("Edge"),y=v("Gecko")&&!(-1!=r.toLowerCase().indexOf("webkit")&&!v("Edge"))&&!(v("Trident")||v("MSIE"))&&!v("Edge"),fa=-1!=r.toLowerCase().indexOf("webkit")&&!v("Edge"),ga=function(){var a=r;if(y)return/rv\:([^\);]+)(\)|;)/.exec(a);if(ea)return/Edge\/([\d\.]+)/.exec(a);if(x)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(fa)return/WebKit\/(\S+)/.exec(a)},z=function(){var a=k.document;return a?a.documentMode:void 0},A=function(){if(da&&k.opera){var a;var b=k.opera.version;try{a=b()}catch(c){a=b}return a}a="";(b=ga())&&(a=b?b[1]:"");return x&&(b=z(),b>parseFloat(a))?String(b):a}(),ha={},ia=function(a){if(!ha[a]){for(var b=0,c=n(String(A)).split("."),d=n(String(a)).split("."),e=Math.max(c.length,d.length),f=0;0==b&&f<e;f++){var h=c[f]||"",B=d[f]||"",O=RegExp("(\\d*)(\\D*)","g"),ra=RegExp("(\\d*)(\\D*)","g");do{var C=O.exec(h)||["","",""],D=ra.exec(B)||["","",""];if(0==C[0].length&&0==D[0].length)break;b=p(0==C[1].length?0:parseInt(C[1],10),0==D[1].length?0:parseInt(D[1],10))||p(0==C[2].length,0==D[2].length)||p(C[2],D[2])}while(0==b)}ha[a]=0<=b}},ka=k.document,la=ka&&x?z()||("CSS1Compat"==ka.compatMode?parseInt(A,10):5):void 0;var E;if(!(E=!y&&!x)){var F;if(F=x)F=9<=Number(la);E=F}E||y&&ia("1.9.1");x&&ia("9");var G=document,H=window;var ma="StopIteration"in k?k.StopIteration:{message:"StopIteration",stack:""},I=function(){};I.prototype.next=function(){throw ma;};I.prototype.X=function(){return this};var J=function(a,b){this.m={};this.i=[];this.J=this.h=0;var c=arguments.length;if(1<c){if(c%2)throw Error("Uneven number of arguments");for(var d=0;d<c;d+=2)this.set(arguments[d],arguments[d+1])}else a&&this.addAll(a)};J.prototype.v=function(){K(this);for(var a=[],b=0;b<this.i.length;b++)a.push(this.m[this.i[b]]);return a};J.prototype.B=function(){K(this);return this.i.concat()};J.prototype.A=function(a){return L(this.m,a)};J.prototype.remove=function(a){return L(this.m,a)?(delete this.m[a],this.h--,this.J++,this.i.length>2*this.h&&K(this),!0):!1};var K=function(a){if(a.h!=a.i.length){for(var b=0,c=0;b<a.i.length;){var d=a.i[b];L(a.m,d)&&(a.i[c++]=d);b++}a.i.length=c}if(a.h!=a.i.length){for(var e={},c=b=0;b<a.i.length;)d=a.i[b],L(e,d)||(a.i[c++]=d,e[d]=1),b++;a.i.length=c}};g=J.prototype;g.get=function(a,b){return L(this.m,a)?this.m[a]:b};g.set=function(a,b){L(this.m,a)||(this.h++,this.i.push(a),this.J++);this.m[a]=b};g.addAll=function(a){var b;if(a instanceof J)b=a.B(),a=a.v();else{b=[];var c=0,d;for(d in a)b[c++]=d;c=[];d=0;for(var e in a)c[d++]=a[e];a=c}for(e=0;e<b.length;e++)this.set(b[e],a[e])};g.forEach=function(a,b){for(var c=this.B(),d=0;d<c.length;d++){var e=c[d],f=this.get(e);a.call(b,f,e,this)}};g.clone=function(){return new J(this)};g.X=function(a){K(this);var b=0,c=this.J,d=this,e=new I;e.next=function(){if(c!=d.J)throw Error("The map has changed since the iterator was created");if(b>=d.i.length)throw ma;var e=d.i[b++];return a?e:d.m[e]};return e};var L=function(a,b){return Object.prototype.hasOwnProperty.call(a,b)};var na=/^(?:([^:/?#.]+):)?(?:\/\/(?:([^/?#]*)@)?([^/#?]*?)(?::([0-9]+))?(?=[/#?]|$))?([^?#]+)?(?:\?([^#]*))?(?:#(.*))?$/,oa=function(a,b){if(a)for(var c=a.split("&"),d=0;d<c.length;d++){var e=c[d].indexOf("="),f=null,h=null;0<=e?(f=c[d].substring(0,e),h=c[d].substring(e+1)):f=c[d];b(f,h?decodeURIComponent(h.replace(/\+/g," ")):"")}};var M=function(a,b){this.u=this.I=this.w="";this.H=null;this.F=this.D="";this.l=this.ba=!1;var c;if(a instanceof M)this.l=void 0!==b?b:a.l,pa(this,a.w),c=a.I,N(this),this.I=c,c=a.u,N(this),this.u=c,qa(this,a.H),c=a.D,N(this),this.D=c,sa(this,a.o.clone()),c=a.F,N(this),this.F=c;else if(a&&(c=String(a).match(na))){this.l=!!b;pa(this,c[1]||"",!0);var d=c[2]||"";N(this);this.I=P(d);d=c[3]||"";N(this);this.u=P(d,!0);qa(this,c[4]);d=c[5]||"";N(this);this.D=P(d,!0);sa(this,c[6]||"",!0);c=c[7]||"";N(this);this.F=P(c)}else this.l=!!b,this.o=new Q(null,0,this.l)};M.prototype.toString=function(){var a=[],b=this.w;b&&a.push(R(b,ta,!0),":");var c=this.u;if(c||"file"==b)a.push("//"),(b=this.I)&&a.push(R(b,ta,!0),"@"),a.push(encodeURIComponent(String(c)).replace(/%25([0-9a-fA-F]{2})/g,"%$1")),c=this.H,null!=c&&a.push(":",String(c));if(c=this.D)this.u&&"/"!=c.charAt(0)&&a.push("/"),a.push(R(c,"/"==c.charAt(0)?ua:va,!0));(c=this.o.toString())&&a.push("?",c);(c=this.F)&&a.push("#",R(c,wa));return a.join("")};M.prototype.clone=function(){return new M(this)};var pa=function(a,b,c){N(a);a.w=c?P(b,!0):b;a.w&&(a.w=a.w.replace(/:$/,""))},qa=function(a,b){N(a);if(b){b=Number(b);if(isNaN(b)||0>b)throw Error("Bad port number "+b);a.H=b}else a.H=null},sa=function(a,b,c){N(a);b instanceof Q?(a.o=b,a.o.N(a.l)):(c||(b=R(b,xa)),a.o=new Q(b,0,a.l))},N=function(a){if(a.ba)throw Error("Tried to modify a read-only Uri");};M.prototype.N=function(a){this.l=a;this.o&&this.o.N(a);return this};var P=function(a,b){return a?b?decodeURI(a.replace(/%25/g,"%2525")):decodeURIComponent(a):""},R=function(a,b,c){return"string"==typeof a?(a=encodeURI(a).replace(b,ya),c&&(a=a.replace(/%25([0-9a-fA-F]{2})/g,"%$1")),a):null},ya=function(a){a=a.charCodeAt(0);return"%"+(a>>4&15).toString(16)+(a&15).toString(16)},ta=/[#\/\?@]/g,va=/[\#\?:]/g,ua=/[\#\?]/g,xa=/[\#\?@]/g,wa=/#/g,Q=function(a,b,c){this.h=this.g=null;this.j=a||null;this.l=!!c},S=function(a){a.g||(a.g=new J,a.h=0,a.j&&oa(a.j,function(b,c){a.add(decodeURIComponent(b.replace(/\+/g," ")),c)}))};g=Q.prototype;g.add=function(a,b){S(this);this.j=null;a=T(this,a);var c=this.g.get(a);c||this.g.set(a,c=[]);c.push(b);this.h+=1;return this};g.remove=function(a){S(this);a=T(this,a);return this.g.A(a)?(this.j=null,this.h-=this.g.get(a).length,this.g.remove(a)):!1};g.A=function(a){S(this);a=T(this,a);return this.g.A(a)};g.B=function(){S(this);for(var a=this.g.v(),b=this.g.B(),c=[],d=0;d<b.length;d++)for(var e=a[d],f=0;f<e.length;f++)c.push(b[d]);return c};g.v=function(a){S(this);var b=[];if("string"==typeof a)this.A(a)&&(b=q(b,this.g.get(T(this,a))));else{a=this.g.v();for(var c=0;c<a.length;c++)b=q(b,a[c])}return b};g.set=function(a,b){S(this);this.j=null;a=T(this,a);this.A(a)&&(this.h-=this.g.get(a).length);this.g.set(a,[b]);this.h+=1;return this};g.get=function(a,b){var c=a?this.v(a):[];return 0<c.length?String(c[0]):b};g.toString=function(){if(this.j)return this.j;if(!this.g)return"";for(var a=[],b=this.g.B(),c=0;c<b.length;c++)for(var d=b[c],e=encodeURIComponent(String(d)),d=this.v(d),f=0;f<d.length;f++){var h=e;""!==d[f]&&(h+="="+encodeURIComponent(String(d[f])));a.push(h)}return this.j=a.join("&")};g.clone=function(){var a=new Q;a.j=this.j;this.g&&(a.g=this.g.clone(),a.h=this.h);return a};var T=function(a,b){var c=String(b);a.l&&(c=c.toLowerCase());return c};Q.prototype.N=function(a){a&&!this.l&&(S(this),this.j=null,this.g.forEach(function(a,c){var d=c.toLowerCase();c!=d&&(this.remove(c),this.remove(d),0<a.length&&(this.j=null,this.g.set(T(this,d),ca(a)),this.h+=a.length))},this));this.l=a};var W=function(a,b,c,d,e,f,h,B,O){U(G.hidden)?(this.C="hidden",this.K="visibilitychange"):U(G.mozHidden)?(this.C="mozHidden",this.K="mozvisibilitychange"):U(G.msHidden)?(this.C="msHidden",this.K="msvisibilitychange"):U(G.webkitHidden)&&(this.C="webkitHidden",this.K="webkitvisibilitychange");this.M=!1;this.s=a;this.G=-1;this.U=b;this.W=c;this.ca=d;this.Z=f;this.R=h?"mousedown":"click";e&&G[this.C]&&V(this,2);this.$=B;this.Y=O||0;this.O=this.S=this.L=this.P=null;a=l(this.aa,this);w(G,this.K,a);za(this)};W.prototype.aa=function(){if(G[this.C])this.M&&(this.T(),this.G=m(),V(this,0));else{if(-1!=this.G){var a=m()-this.G;a>this.Y&&(this.G=-1,V(this,1,a),null!==this.s&&this.s.registerFinalizeCallback(l(this.s.fireOnObject,this.s,"attempt_survey_trigger",["wfocus",this.W,this.U,this.L,this.S,this.O,a])))}this.Z&&V(this,3)}};var za=function(a){if(null!==a.s){var b=l(function(a,b,c){this.L=b.fa().ea();this.L||(a=new M(b.da()),this.L=a.u+a.D);this.S=b.creativeConversionUrl();this.O=b.adGroupCreativeId();this.V(c)},a),c=a.R;a.s.forEachAd(function(a){a.forEachNavigationAdPiece(function(d){a.listen(d,c,b)})})}else{var d=l(a.V,a);w(H,a.R,d)}};W.prototype.V=function(a){this.P=a.button;this.M=!0;a=l(this.T,this);H.setTimeout(a,5E3)};W.prototype.T=function(){this.M=!1};var V=function(a,b,c){var d=["//",a.ca?"googleads.g.doubleclick.net":"pagead2.googlesyndication.com","/pagead/gen_204?id=wfocus","&gqid="+a.U,"&qqid="+a.W].join("");0==b&&(d+="&return=0");1==b&&(d+="&return=1&timeDelta="+c,a.$&&(d+="&cbtn="+a.P));2==b&&(d+="&bgload=1");3==b&&(d+="&fg=1");H.google_image_requests||(H.google_image_requests=[]);a=H.document.createElement("img");a.src=d;H.google_image_requests.push(a)},U=function(a){return"undefined"!==typeof a};var Aa=function(a,b,c,d,e,f,h,B){return new W(null,a,b,c,d,e,f,h,B)},X=["wfocusnhinit"],Y=k;X[0]in Y||!Y.execScript||Y.execScript("var "+X[0]);for(var Z;X.length&&(Z=X.shift());)X.length||void 0===Aa?Y=Y[Z]?Y[Z]:Y[Z]={}:Y[Z]=Aa;}).call(this);wfocusnhinit("bZWqVoaBHJWy8gX_u574AQ","COSo1rTGzcoCFYmWvAodX0YPdQ",true,true,true,false,false,0);</script><iframe scrolling="no" frameborder=0 height=0 width=0 src="https://cm.g.doubleclick.net/push?client=ca-pub-5865311875227536&amp;srn=gdn" style="position:absolute"></iframe><script type="text/javascript">(function(){var h=this,aa=function(a){var b=typeof a;if("object"==b)if(a){if(a instanceof Array)return"array";if(a instanceof Object)return b;var c=Object.prototype.toString.call(a);if("[object Window]"==c)return"object";if("[object Array]"==c||"number"==typeof a.length&&"undefined"!=typeof a.splice&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("splice"))return"array";if("[object Function]"==c||"undefined"!=typeof a.call&&"undefined"!=typeof a.propertyIsEnumerable&&!a.propertyIsEnumerable("call"))return"function"}else return"null";else if("function"==b&&"undefined"==typeof a.call)return"object";return b},k=function(a){return"string"==typeof a},ba=function(a,b){var c=Array.prototype.slice.call(arguments,1);return function(){var b=c.slice();b.push.apply(b,arguments);return a.apply(this,b)}},m=Date.now||function(){return+new Date},n=function(a,b){var c=a.split("."),d=h;c[0]in d||!d.execScript||d.execScript("var "+c[0]);for(var e;c.length&&(e=c.shift());)c.length||void 0===b?d=d[e]?d[e]:d[e]={}:d[e]=b};var ca=function(a,b,c,d,e){if(e)c=a+("&"+b+"="+c);else{var f="&"+b+"=",g=a.indexOf(f);0>g?c=a+f+c:(g+=f.length,f=a.indexOf("&",g),c=0<=f?a.substring(0,g)+c+a.substring(f):a.substring(0,g)+c)}return 2E3<c.length?void 0!==d?ca(a,b,d,void 0,e):a:c};var da=function(){var a=/[&\?]exk=([^& ]+)/.exec(p.location.href);return a&&2==a.length?a[1]:null};var q=function(a,b){this.width=a;this.height=b};q.prototype.round=function(){this.width=Math.round(this.width);this.height=Math.round(this.height);return this};var ea=function(a,b){for(var c in a)Object.prototype.hasOwnProperty.call(a,c)&&b.call(void 0,a[c],c,a)},ga=function(){var a=fa;if(!a)return"";var b=/.*[&#?]google_debug(=[^&]*)?(&.*)?$/;try{var c=b.exec(decodeURIComponent(a));if(c)return c[1]&&1<c[1].length?c[1].substring(1):"true"}catch(d){}return""};var ha=function(a,b,c,d){a.addEventListener?a.addEventListener(b,c,d||!1):a.attachEvent&&a.attachEvent("on"+b,c)};var ia=function(a){var b="";ea(a,function(a,d){if(0===a||a)b+="&"+d+"="+encodeURIComponent(String(a))});return b},r=function(a,b,c){a.google_image_requests||(a.google_image_requests=[]);var d=a.document.createElement("img");if(c){var e=function(a){c(a);a=e;d.removeEventListener?d.removeEventListener("load",a,!1):d.detachEvent&&d.detachEvent("onload",a);a=e;d.removeEventListener?d.removeEventListener("error",a,!1):d.detachEvent&&d.detachEvent("onerror",a)};ha(d,"load",e);ha(d,"error",e)}d.src=b;a.google_image_requests.push(d)};var ja=function(a,b,c){this.v=a;this.u=b;this.c=c;this.f=null;this.s=this.g;this.A=!1},ka=function(a,b,c){this.message=a;this.fileName=b||"";this.lineNumber=c||-1},ma=function(a,b,c){var d;try{d=c()}catch(g){var e=a.c;try{var f=la(g),e=a.s.call(a,b,f,void 0,void 0)}catch(l){a.g("pAR",l)}if(!e)throw g;}finally{}return d},t=function(a,b){var c=na;return function(){var d=arguments;return ma(c,a,function(){return b.apply(void 0,d)})}};ja.prototype.g=function(a,b,c,d,e){var f={};f.context=a;b instanceof ka||(b=la(b));f.msg=b.message.substring(0,512);b.fileName&&(f.file=b.fileName);0<b.lineNumber&&(f.line=b.lineNumber.toString());a=h.document;f.url=a.URL.substring(0,512);f.ref=a.referrer.substring(0,512);if(this.f)try{this.f(f)}catch(l){}if(d)try{d(f)}catch(l){}d=this.v;try{if((this.A?d.w:Math.random())<(c||d.o)){var g=d.m+(e||this.u)+ia(f),g=g.substring(0,2E3);r(h,g)}}catch(l){}return this.c};var la=function(a){var b=a.toString();a.name&&-1==b.indexOf(a.name)&&(b+=": "+a.name);a.message&&-1==b.indexOf(a.message)&&(b+=": "+a.message);if(a.stack){var c=a.stack,d=b;try{-1==c.indexOf(d)&&(c=d+"\n"+c);for(var e;c!=e;)e=c,c=c.replace(/((https?:\/..*\/)[^\/:]*:\d+(?:.|\n)*)\2/,"$1");b=c.replace(/\n */g,"\n")}catch(f){b=d}}return new ka(b,a.fileName,a.lineNumber)};var oa=String.prototype.trim?function(a){return a.trim()}:function(a){return a.replace(/^[\s\xa0]+|[\s\xa0]+$/g,"")},pa=function(a,b){return a<b?-1:a>b?1:0};var qa=Array.prototype.indexOf?function(a,b,c){return Array.prototype.indexOf.call(a,b,c)}:function(a,b,c){c=null==c?0:0>c?Math.max(0,a.length+c):c;if(k(a))return k(b)&&1==b.length?a.indexOf(b,c):-1;for(;c<a.length;c++)if(c in a&&a[c]===b)return c;return-1},ra=Array.prototype.map?function(a,b,c){return Array.prototype.map.call(a,b,c)}:function(a,b,c){for(var d=a.length,e=Array(d),f=k(a)?a.split(""):a,g=0;g<d;g++)g in f&&(e[g]=b.call(c,f[g],g,a));return e};var sa=function(a,b){for(var c in a)b.call(void 0,a[c],c,a)};var v;a:{var ta=h.navigator;if(ta){var ua=ta.userAgent;if(ua){v=ua;break a}}v=""}var w=function(a){return-1!=v.indexOf(a)};var x=function(){return w("Opera")||w("OPR")},va=function(){return(w("Chrome")||w("CriOS"))&&!x()&&!w("Edge")};var wa=function(){return w("iPhone")&&!w("iPod")&&!w("iPad")};var xa=x(),y=w("Trident")||w("MSIE"),ya=w("Edge"),z=w("Gecko")&&!(-1!=v.toLowerCase().indexOf("webkit")&&!w("Edge"))&&!(w("Trident")||w("MSIE"))&&!w("Edge"),za=-1!=v.toLowerCase().indexOf("webkit")&&!w("Edge"),Aa=function(){var a=v;if(z)return/rv\:([^\);]+)(\)|;)/.exec(a);if(ya)return/Edge\/([\d\.]+)/.exec(a);if(y)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(za)return/WebKit\/(\S+)/.exec(a)},Ba=function(){var a=h.document;return a?a.documentMode:void 0},Ca=function(){if(xa&&h.opera){var a;var b=h.opera.version;try{a=b()}catch(c){a=b}return a}a="";(b=Aa())&&(a=b?b[1]:"");return y&&(b=Ba(),b>parseFloat(a))?String(b):a}(),Da={},A=function(a){var b;if(!(b=Da[a])){b=0;for(var c=oa(String(Ca)).split("."),d=oa(String(a)).split("."),e=Math.max(c.length,d.length),f=0;0==b&&f<e;f++){var g=c[f]||"",l=d[f]||"",U=RegExp("(\\d*)(\\D*)","g"),u=RegExp("(\\d*)(\\D*)","g");do{var L=U.exec(g)||["","",""],M=u.exec(l)||["","",""];if(0==L[0].length&&0==M[0].length)break;b=pa(0==L[1].length?0:parseInt(L[1],10),0==M[1].length?0:parseInt(M[1],10))||pa(0==L[2].length,0==M[2].length)||pa(L[2],M[2])}while(0==b)}b=Da[a]=0<=b}return b},Ea=h.document,Fa=Ea&&y?Ba()||("CSS1Compat"==Ea.compatMode?parseInt(Ca,10):5):void 0;!z&&!y||y&&9<=Number(Fa)||z&&A("1.9.1");y&&A("9");var B=document,p=window;function C(a){return"function"===typeof encodeURIComponent?encodeURIComponent(a):escape(a)}var D=null,Ga=function(){if(!B.body)return!1;if(!D){var a=B.createElement("iframe");a.style.display="none";a.id="anonIframe";D=a;B.body.appendChild(a)}return!0};var na;na=new ja(new function(){this.m="http"+("http:"===p.location.protocol?"":"s")+"://pagead2.googlesyndication.com/pagead/gen_204?id=";this.o=.01;this.w=Math.random()},"jserror",!0);var E=function(a,b){return t(a,b)};y&&A("9");!za||A("528");z&&A("1.9b")||y&&A("8")||xa&&A("9.5")||za&&A("528");z&&!A("8")||y&&A("9");var Ha=function(a,b,c){if("array"==aa(b))for(var d=0;d<b.length;d++)Ha(a,String(b[d]),c);else null!=b&&c.push("&",a,""===b?"":"=",encodeURIComponent(String(b)))},Ia=function(a,b,c){for(c=c||0;c<b.length;c+=2)Ha(b[c],b[c+1],a);return a},Ja=function(a,b){var c=2==arguments.length?Ia([a],arguments[1],0):Ia([a],arguments,1);if(c[1]){var d=c[0],e=d.indexOf("#");0<=e&&(c.push(d.substr(e)),c[0]=d=d.substr(0,e));e=d.indexOf("?");0>e?c[1]="?":e==d.length-1&&(c[1]=void 0)}return c.join("")};var Ka=0,F={},Ma=function(a){var b=F.imageLoadingEnabled;if(null!=b)a(b);else{var c=!1;La(function(b,e){delete F[e];c||(c=!0,null!=F.imageLoadingEnabled||(F.imageLoadingEnabled=b),a(b))})}},La=function(a){var b=new Image,c,d=""+Ka++;F[d]=b;b.onload=function(){clearTimeout(c);a(!0,d)};c=setTimeout(function(){a(!1,d)},300);b.src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAEAAAAALAAAAAABAAEAAAICRAEAOw=="},Na=function(a){if(a){var b=document.createElement("OBJECT");b.data=a;b.width=1;b.height=1;b.style.visibility="hidden";var c=""+Ka++;F[c]=b;b.onload=b.onerror=function(){delete F[c]};document.body.appendChild(b)}},Oa=function(a){if(a){var b=new Image,c=""+Ka++;F[c]=b;b.onload=b.onerror=function(){delete F[c]};b.src=a}},Pa=function(a){Ma(function(b){b?Oa(a):Na(a)})};var Qa={l:"ud=1",j:"ts=0",B:"sc=1",h:"gz=1",i:"op=1"};if(B&&B.URL){var fa=B.URL,Ra=!(fa&&0<ga().length);na.c=Ra}var G=function(a,b,c,d){ha(a,b,t(d||"osd_or_lidar::"+b,c),void 0)},Sa=function(a,b,c){if(!(0>=b)){var d=0,e=function(){a();d++;d<b&&p.setTimeout(t(c,e),100)};e()}};var H=function(a,b){this.b=a||0;this.a=b||""},I=function(a,b){a.b&&(b[4]=a.b);a.a&&(b[12]=a.a)};H.prototype.match=function(a){return(this.b||this.a)&&(a.b||a.a)?this.a||a.a?this.a==a.a:this.b||a.b?this.b==a.b:!1:!1};H.prototype.toString=function(){var a=""+this.b;this.a&&(a+="-"+this.a);return a};var Ta=function(){var a=J,b=[];a.b&&b.push("adk="+a.b);a.a&&b.push("exk="+a.a);return b},K=function(a){var b=[];sa(a,function(a,d){var e=C(d),f=a;k(f)&&(f=C(f));b.push(e+"="+f)});return b.join("\n")},N=0,Ua=0,Va=function(a){var b=0,c=p;try{if(c&&c.Goog_AdSense_getAdAdapterInstance)return c}catch(d){}for(;c&&5>b;){try{if(c.google_osd_static_frame)return c}catch(d){}try{if(c.aswift_0&&(!a||c.aswift_0.google_osd_static_frame))return c.aswift_0}catch(d){}b++;c=c!=c.parent?c.parent:null}return null},Wa=function(a,b,c,d,e){if(10<Ua)p.clearInterval(N);else if(++Ua,p.postMessage&&(b.b||b.a)){var f=Va(!0);if(f){var g={};I(b,g);g[0]="goog_request_monitoring";g[6]=a;g[16]=c;d&&d.length&&(g[17]=d.join(","));e&&(g[19]=e);try{var l=K(g);f.postMessage(l,"*")}catch(U){}}}},Xa=function(a){var b=Va(!1),c=!b;!b&&p&&(b=p.parent);if(b&&b.postMessage)try{b.postMessage(a,"*"),c&&p.postMessage(a,"*")}catch(d){}};var O=!1,Ya=function(a){if(a=a.match(/[\d]+/g))a.length=3};(function(){if(navigator.plugins&&navigator.plugins.length){var a=navigator.plugins["Shockwave Flash"];if(a&&(O=!0,a.description)){Ya(a.description);return}if(navigator.plugins["Shockwave Flash 2.0"]){O=!0;return}}if(navigator.mimeTypes&&navigator.mimeTypes.length&&(a=navigator.mimeTypes["application/x-shockwave-flash"],O=!!a&&a.enabledPlugin)){Ya(a.enabledPlugin.description);return}try{var b=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.7");O=!0;Ya(b.GetVariable("$version"));return}catch(c){}try{b=new ActiveXObject("ShockwaveFlash.ShockwaveFlash.6");O=!0;return}catch(c){}try{b=new ActiveXObject("ShockwaveFlash.ShockwaveFlash"),O=!0,Ya(b.GetVariable("$version"))}catch(c){}})();var Za=w("Firefox"),$a=wa()||w("iPod"),ab=w("iPad"),bb=w("Android")&&!(va()||w("Firefox")||x()||w("Silk")),cb=va(),db=w("Safari")&&!(va()||w("Coast")||x()||w("Edge")||w("Silk")||w("Android"))&&!(wa()||w("iPad")||w("iPod"));var P=function(a){return(a=a.exec(v))?a[1]:""};(function(){if(Za)return P(/Firefox\/([0-9.]+)/);if(y||ya||xa)return Ca;if(cb)return P(/Chrome\/([0-9.]+)/);if(db&&!(wa()||w("iPad")||w("iPod")))return P(/Version\/([0-9.]+)/);if($a||ab){var a;if(a=/Version\/(\S+).*Mobile\/(\S+)/.exec(v))return a[1]+"."+a[2]}else if(bb)return(a=P(/Android\s+([0-9.]+)/))?a:P(/Version\/([0-9.]+)/);return""})();var fb=function(){var a=p.parent&&p.parent!=p,b=a&&0<="//tpc.googlesyndication.com".indexOf(p.location.host);if(a&&p.name&&0==p.name.indexOf("google_ads_iframe")||b){var c;a=p||p;try{var d;if(a.document&&!a.document.body)d=new q(-1,-1);else{var e=(a||window).document,f="CSS1Compat"==e.compatMode?e.documentElement:e.body;d=(new q(f.clientWidth,f.clientHeight)).round()}c=d}catch(g){c=new q(-12245933,-12245933)}return eb(c)}c=p.document.getElementsByTagName("SCRIPT");return 0<c.length&&(c=c[c.length-1],c.parentElement&&c.parentElement.id&&0<c.parentElement.id.indexOf("_ad_container"))?eb(void 0,c.parentElement):null},eb=function(a,b){var c=gb("IMG",a,b);return c||(c=gb("IFRAME",a,b))?c:(c=gb("OBJECT",a,b))?c:null},gb=function(a,b,c){var d=document;c=c||d;d=a&&"*"!=a?a.toUpperCase():"";c=c.querySelectorAll&&c.querySelector&&d?c.querySelectorAll(d+""):c.getElementsByTagName(d||"*");for(d=0;d<c.length;d++){var e=c[d];if("OBJECT"==a)a:{var f=e.getAttribute("height");if(null!=f&&0<f&&0==e.clientHeight)for(var f=e.children,g=0;g<f.length;g++){var l=f[g];if("OBJECT"==l.nodeName||"EMBED"==l.nodeName){e=l;break a}}}f=e.clientHeight;g=e.clientWidth;if(l=b)l=new q(g,f),l=Math.abs(b.width-l.width)<.1*b.width&&Math.abs(b.height-l.height)<.1*b.height;if(l||!b&&10<f&&10<g)return e}return null};var hb,Q=0,R="",S=!1,T=!1,V=!1,ib=!0,jb=!1,kb=!1,lb=!1,mb=!1,nb=!1,ob="",pb=0,qb=0,W=0,rb=[],J=null,sb="",tb=[],ub=null,vb=[],wb=!1,xb="",yb="",zb=(new Date).getTime(),Ab=!1,Bb="",Cb=!1,Db=["1","0","3"],X=0,Y=0,Eb=0,Fb="",Hb=function(a,b,c){S&&(ib||3!=(c||3)||lb)&&Gb(a,b,!0);if(V||T&&kb)Gb(a,b),T=V=!1},Ib=function(){var a=ub;return a?2!=a():!0},Gb=function(a,b,c){(b=b||sb)&&!wb&&(2==Y||c)&&Ib()&&(b=Jb(b,c),jb?Pa(b):r(a,b,void 0),nb=!0,c?S=!1:wb=!0)},Jb=function(a,b){var c;c=b?"osdim":V?"osd2":"osdtos";var d=["//pagead2.googlesyndication.com/activeview","?id=",c];"osd2"==c&&T&&kb&&d.push("&ts=1");R&&d.push("&avi=",R);hb&&d.push("&cid=",hb);d.push("&ti=1");d.push("&",a);d.push("&uc="+Eb);Ab?d.push("&tgt="+Bb):d.push("&tgt=nf");d.push("&cl="+(Cb?1:0));""!=ob&&(d.push("&lop=1"),c=m()-pb,d.push("&tslp="+c));d=d.join("");for(c=0;c<tb.length;c++){try{var e=tb[c]()}catch(g){}var f="max_length";2<=e.length&&(3==e.length&&(f=e[2]),d=ca(d,C(e[0]),C(e[1]),f))}2E3<d.length&&(d=d.substring(0,2E3));return d},Z=function(a){if(xb){try{var b=ca(xb,"vi",a);Ga()&&r(D.contentWindow,b,void 0)}catch(c){}0<=qa(Db,a)&&(xb="")}},Kb=function(){Z("-1")},Mb=function(a){if(a&&a.data&&k(a.data)){var b;var c=a.data;if(k(c)){b={};for(var c=c.split("\n"),d=0;d<c.length;d++){var e=c[d].indexOf("=");if(!(0>=e)){var f=Number(c[d].substr(0,e)),e=c[d].substr(e+1);switch(f){case 5:case 8:case 11:case 15:case 16:case 18:e="true"==e;break;case 4:case 7:case 6:case 14:case 20:case 21:case 22:case 23:e=Number(e);break;case 3:case 19:if("function"==aa(decodeURIComponent))try{e=decodeURIComponent(e)}catch(l){throw Error("Error: URI malformed: "+e);}break;case 17:e=ra(decodeURIComponent(e).split(","),Number)}b[f]=e}}b=b[0]?b:null}else b=null;if(b&&(c=new H(b[4],b[12]),J&&J.match(c))){for(c=0;c<vb.length;c++)vb[c](b);void 0!=b[18]&&(lb=b[18],lb||2!=W||(W=3,Lb()));c=b[0];if("goog_acknowledge_monitoring"==c)p.clearInterval(N),X=2;else if("goog_get_mode"==c){X=1;d={};J&&I(J,d);d[0]="goog_provide_mode";d[6]=Y;d[19]=Fb;d[16]=T;try{var g=K(d);a.source.postMessage(g,a.origin)}catch(l){}p.clearInterval(N);X=2}else"goog_update_data"==c?(sb=b[3],++Eb):"goog_image_request"==c&&(Hb(p,b[3]),b[5]||b[11]||Z("0"));if("goog_update_data"==c||"goog_image_request"==c)(1==Y||2==Y||S)&&b[5]&&(a=1==b[15]&&"goog_update_data"==c,kb=!0,Z("1"),yb&&Ib()&&(g=yb,Ga()&&r(D.contentWindow,g,void 0),yb=""),S&&!a&&(Gb(p,void 0,!0),mb=!0,qb=m()),3==W&&(W=4,Lb()),S||1!=Y||(wb=!0)),(1==Y||2==Y||S)&&b[11]&&(T=!1,Z("3"),S&&(Gb(p,void 0,!0),1==W&&lb&&(W=2)))}}},Lb=function(){var a=p,b=W;0!=b&&1!=b&&Nb(a,"osdim","zas="+b)},Nb=function(a,b,c){b="//pagead2.googlesyndication.com/pagead/gen_204?id="+b+"&";var d=[];d.push("ovr_value="+Q);d.push("avi="+R);J&&(d=d.concat(Ta()));d.push("tt="+((new Date).getTime()-zb));d.push(c);a.document&&a.document.referrer&&d.push("ref="+C(a.document.referrer));b+=d.join("&");try{r(a,b,void 0)}catch(e){}},Ob=function(){Hb(p);Z("0");2>X&&!T&&2==Y&&Nb(p,"osd2","hs="+X)},Pb=function(){var a={};I(J,a);a[0]="goog_dom_content_loaded";var b=K(a);try{Sa(function(){Xa(b)},10,"osd_listener::ldcl_int")}catch(c){}},Qb=function(){var a={};I(J,a);a[0]="goog_creative_loaded";var b=K(a);Sa(function(){Xa(b)},10,"osd_listener::lcel_int");Cb=!0},Rb=function(a){if(k(a)){a=a.split("&");for(var b=a.length-1;0<=b;b--){var c=a[b],d=Qa;c==d.l?(ib=!1,a.splice(b,1)):c==d.h?(W=1,a.splice(b,1)):c==d.j?(T=!1,a.splice(b,1)):c==d.i&&(jb=!0,a.splice(b,1))}Fb=a.join("&")}},Sb=function(){if(!Ab){var a=fb();a&&(Ab=!0,Bb=a.tagName,a.complete||a.naturalWidth?Qb():G(a,"load",Qb,"osd_listener::creative_load"))}};n("osdlfm",E("osd_listener::init",function(a,b,c,d,e,f,g,l,U){Q=a;xb=b;yb=d;S=f;hb=U;g&&Rb(g);T=f;1==l?rb.push(947190538):2==l?rb.push(947190541):3==l&&rb.push(947190542);J=new H(e,da());G(p,"load",Kb,"osd_listener::load");G(p,"message",Mb,"osd_listener::message");R=c||"";G(p,"unload",Ob,"osd_listener::unload");var u=p.document;!u.readyState||"complete"!=u.readyState&&"loaded"!=u.readyState?!window.opera&&/msie/i.test(navigator.userAgent)?G(u,"readystatechange",function(){"complete"!=u.readyState&&"loaded"!=u.readyState||Pb()},"osd_listener::rsc"):G(u,"DOMContentLoaded",Pb,"osd_listener::dcl"):Pb();-1==Q?Y=f?3:1:-2==Q?Y=3:0<Q&&(Y=2,V=!0);T&&!V&&-1==Q&&(Y=2);J&&(J.b||J.a)&&(X=1,N=p.setInterval(t("osd_proto::reqm_int",ba(Wa,Y,J,T,rb,Fb)),500));Sa(Sb,5,"osd_listener:sfc")}));n("osdlac",E("osd_listener::lac_ex",function(a){tb.push(a)}));n("osdlamrc",E("osd_listener::lamrc_ex",function(a){vb.push(a)}));n("osdsir",t("osd_listener::sir_ex",Hb));n("osdacrc",E("osd_listener::acrc_ex",function(a){ub=a}));n("osdpcls",E("osd_listener::acrc_ex",function(a){if(""==a||p==p.top||wb||nb&&!mb)return!1;ob=a;if(mb){var b=R;R=a;var c=Jb(sb,!0);R=b;b=m()-qb;c=Ja(c,"tsvp",b);b=p;jb?Pa(c):r(b,c,void 0)}R=""==R?a:R+","+a;pb=m();return!0}));}).call(this);osdlfm(-1,'','Bv_7PbZWqVqS-HImt8gXfjL2oBwD6xe7WWgAAEAE4AcgBCaAGIQ','',2165458240,true,'ud\x3d1\x26la\x3d0\x26',3,'5Gibmh4bLry7m45k7R0fiVVoY2g');</script><img src="http://www.google.com/ads/measurement/l?ebcid=ALh7CaRBoc66Cv9TsyLgdl0jprDw5rq2-rBGjLu_9zBuUoVcqip1Epxn8OZL9Gfwl1PCPWNFo2mTRAsRovihmr114RSGix0DrA" style="display:none;"></img></body></html></div>
+
+
+
+</div>
+
+<div><div id="172494003392385199" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script>
+  (function() {
+    var cx = '017459606385276639634:0k76wbdgiiu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div>
+
+
+
+</div>
+
+<h2 class="wsite-content-title" style="text-align:left;"><strong><a href="198-bivariate-data-analysis.html">19.8. Bivariate Data Analysis</a><br /><br /><a href="1981-covariance.html">19.8.1 Covariance</a><br /><a href="1982-correlation-coefficient.html">19.8.2 Correlation Coefficient</a><br /><a href="1983-scatterplot-and-regression-line.html">19.8.3 Scatterplot and Regression Line</a></strong><br /><br /></h2>
+
+<div class="paragraph" style="text-align:left;"><strong>Bivariate data</strong>&nbsp;consists of two variables, usually X and Y, where X is the independent variable and Y is the dependent variable. Bivariate data analysis determines whether a change in the value of one variable affects the other and it most commonly involves&nbsp;<strong>covariance</strong>&nbsp;and&nbsp;<strong>correlation</strong>. We use a&nbsp;<strong>scatter plot</strong>&nbsp;to show the data graphically and a&nbsp;<strong>regression line</strong>, or line of best fit,&nbsp;to estimate the value of the dependent variable Y given a value for X.<br /></div>
+
+<div><div id="589777059933789389" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><script>
+  (function() {
+    var cx = '017459606385276639634:0k76wbdgiiu';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//cse.google.com/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search></div>
+
+
+
+</div>
+
+<div><div id="102916186822212818" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+		
+		<link rel='stylesheet' href='http://cdn2.editmysite.com/css/sites.css?buildTime=1234' type='text/css' />
+
+		<style rel='stylesheet' type='text/css' title="wsite-theme-css" >.icontent_container ul,.icontent_container ol,.icontent_container li,.icontent_container h1,.icontent_container h2,.icontent_container h3,.icontent_container h4,.icontent_container h5,.icontent_container h6,.icontent_container pre,.icontent_container form,body,html,.icontent_container div.paragraph,.icontent_container blockquote,.icontent_container fieldset,.icontent_container input{ margin: 0; padding: 0; }
+.icontent_container ul,.icontent_container ol,.icontent_container li,.icontent_container h1,.icontent_container h2,.icontent_container h3,.icontent_container h4,.icontent_container h5,.icontent_container h6,.icontent_container pre,.icontent_container form,body,html,.icontent_container p,.icontent_container blockquote,.icontent_container fieldset,.icontent_container input,.icontent_container div.paragraph{ margin: 0; padding: 0; }
+.icontent_container a img{ border: 0; }
+.icontent_container a{ text-decoration: none; }
+body{ font-family: 'Quattrocento', serif; font-size: 14px; color: #3e3e3e; background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/footer-bg.png?634669) repeat; }
+.icontent_container .container{ margin: 0 auto; width: 840px; }
+.icontent_container #header-wrap,.icontent_container #banner-wrap,.icontent_container #nav-wrap,.icontent_container #main-wrap,.icontent_container #footer-wrap{ width:100%; min-width:840px; background:#fff; }
+.icontent_container div.paragraph a,.icontent_container #nav-wrap a,.icontent_container h2 a{ color: #000; border-bottom:1px dashed #000; }
+.icontent_container p a,.icontent_container #nav-wrap a,.icontent_container h2 a{ color: #000; border-bottom:1px dashed #000; }
+.icontent_container a:hover{ border-bottom:none; }
+.icontent_container blockquote{ font-style:italic; border-left:4px solid #ddd; margin:10px 0 10px 0; padding-left:20px; line-height:1.5; color:#888; }
+.icontent_container .wsite-multicol-table-wrap{margin:0 !important;}
+.icontent_container h2{ font-size: 24px; padding: .5em 0 .2em 0; line-height: 1.2; font-weight: normal; color: #000; }
+.icontent_container div.paragraph{ line-height: 1.5; padding: .5em 0; }
+.icontent_container p,.icontent_container div.paragraph{ line-height: 1.5; padding: .5em 0; }
+.icontent_container div#content{min-height:400px;}
+.icontent_container #header-wrap{ padding:40px 0px 5px; }
+.icontent_container #logo,.icontent_container #logo a{ color:#000; font-size:30px; border:none; }
+.icontent_container #header,.icontent_container #nav-table{ border-collapse: collapse; border-spacing: 0; width:100%; }
+.icontent_container #header td{ vertical-align: middle; text-align: left; }
+.icontent_container .header-right table{ float: right; width: 1px; }
+.icontent_container .header-right td{ padding: 0; }
+.icontent_container .header-right .phone-number .wsite-text{ display: block; white-space: nowrap; }
+.icontent_container .header-right .wsite-social{ vertical-align: middle; }
+.icontent_container .wsite-social-item{ width: 28px; height: 30px; margin: 1px 0 0 4px; }
+.icontent_container .wsite-social-rss{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -130px 0px; }
+.icontent_container .wsite-social-rss:hover{ background-position: -130px -30px; }
+.icontent_container .wsite-social-rss:active{ background-position: -130px -60px; }
+.icontent_container .wsite-social-linkedin{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -65px 0px; }
+.icontent_container .wsite-social-linkedin:hover{ background-position: -65px -30px; }
+.icontent_container .wsite-social-linkedin:active{ background-position: -65px -60px; }
+.icontent_container .wsite-social-facebook{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat 0px 0px; }
+.icontent_container .wsite-social-facebook:hover{ background-position: 0px -30px; }
+.icontent_container .wsite-social-facebook:active{ background-position: 0px -60px; }
+.icontent_container .wsite-social-twitter{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -32px 0px; }
+.icontent_container .wsite-social-twitter:hover{ background-position: -32px -30px; }
+.icontent_container .wsite-social-twitter:active{ background-position: -32px -60px; }
+.icontent_container .wsite-social-mail{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -97px 0px; }
+.icontent_container .wsite-social-mail:hover{ background-position: -97px -30px; }
+.icontent_container .wsite-social-mail:active{ background-position: -97px -60px; }
+.icontent_container .wsite-social-pinterest{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -227px 0px; }
+.icontent_container .wsite-social-pinterest:hover{ background-position: -227px -30px; }
+.icontent_container .wsite-social-pinterest:active{ background-position: -227px -60px; }
+.icontent_container .wsite-social-youtube{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -325px 0px; }
+.icontent_container .wsite-social-youtube:hover{ background-position: -325px -30px; }
+.icontent_container .wsite-social-youtube:active{ background-position: -325px -60px; }
+.icontent_container .wsite-social-plus{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -195px 0px; }
+.icontent_container .wsite-social-plus:hover{ background-position: -195px -30px; }
+.icontent_container .wsite-social-plus:active{ background-position: -195px -60px; }
+.icontent_container .wsite-social-flickr{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -162px 0px; }
+.icontent_container .wsite-social-flickr:hover{ background-position: -162px -30px; }
+.icontent_container .wsite-social-flickr:active{ background-position: -162px -60px; }
+.icontent_container .wsite-social-vimeo{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -260px 0px; }
+.icontent_container .wsite-social-vimeo:hover{ background-position: -260px -30px; }
+.icontent_container .wsite-social-vimeo:active{ background-position: -260px -60px; }
+.icontent_container .wsite-social-yahoo{ background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/social-icons.png?634669) no-repeat -292px 0px; }
+.icontent_container .wsite-social-yahoo:hover{ background-position: -292px -30px; }
+.icontent_container .wsite-social-yahoo:active{ background-position: -292px -60px; }
+.icontent_container .header-right .wsite-search{ margin-left:10px ; vertical-align: middle; background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/search-bg.png?634669) no-repeat top right; height:32px; width:200px; }
+.icontent_container .header-right .wsite-search-input{ width: 150px; border: none; margin:3px; background: none; }
+.icontent_container .header-right .wsite-search-button{ position: relative; right:0; margin: 8px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/search-icon.png?634669) no-repeat; }
+.icontent_container #nav-wrap{ padding:0px 0px 20px; }
+.icontent_container #nav-wrap .container{ clear: both; overflow: hidden; position: relative; }
+.icontent_container #nav-wrap .container ul{ list-style: none; }
+.icontent_container #nav-wrap .container ul li{ list-style: none; float: left; background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/nav-separator.png?634669) no-repeat right center; padding-right:6px; }
+.icontent_container #nav-wrap .container ul > li:first-child a,.icontent_container #nav-wrap .container ul span:first-child li a{ padding-left:0px; }
+.icontent_container #nav-wrap .container ul > li:last-child,.icontent_container #nav-wrap .container ul span:last-child li{ background:none; padding:0px; }
+.icontent_container #nav-wrap .container ul li a{ display: block; padding: 5px 20px; border: 0; outline: 0; list-style-type: none; }
+.icontent_container #nav-wrap .container ul li#active a,.icontent_container #nav-wrap .container ul li a:hover{ border: 0; color:#aaa; }
+.icontent_container #wsite-menus .wsite-menu li a{ border: 0; background:none; }
+.icontent_container #wsite-menus .wsite-menu li:first-child a:hover{ border-radius:5px 5px 0 0; }
+.icontent_container #wsite-menus .wsite-menu li:last-child a:hover{ border-radius:0 0 5px 5px; }
+.icontent_container #wsite-menus .wsite-menu{ border:1px solid #aaa; border-radius:5px; background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-wrapper.png?634669); }
+.icontent_container #banner-wrap{ background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-wrapper.png?634669); border-top:1px dashed #ddd; border-bottom:1px dashed #ddd; }
+.icontent_container .tall-header-page #banner{ position:relative; }
+.icontent_container .tall-header-page .corner-left{ background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-tall-bg-left.png?634669) no-repeat top left; position:absolute; top:0px; left:0px; width:37px; height:348px; }
+.icontent_container .tall-header-page .corner-right{ background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-tall-bg-right.png?634669) no-repeat top left; position:absolute; top:0px; right:0px; width:37px; height:348px; }
+.icontent_container .tall-header-page .wsite-header{ width: 840px; height: 348px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-tall.jpg?634669) no-repeat 0px 0px; }
+.icontent_container .short-header-page #banner{ position:relative; }
+.icontent_container .short-header-page .corner-left{ background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-short-bg-left.png?634669) no-repeat top left; position:absolute; top:0px; left:0px; width:9px; height:178px; }
+.icontent_container .short-header-page .corner-right{ background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-short-bg-right.png?634669) no-repeat top left; position:absolute; top:0px; right:0px; width:10px; height:178px; }
+.icontent_container .short-header-page .wsite-header{ width: 840px; height: 178px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-short.jpg?634669) no-repeat; }
+.icontent_container .no-header-page #banner-wrap{ height:0px; border-bottom:none; }
+.icontent_container .no-header-page .wsite-header{ display:none; }
+.icontent_container .landing-page #banner{ background: none; padding: 65px 0px 0px; min-height:390px; }
+.icontent_container #bannerleft{ float: left; width: 325px; }
+.icontent_container .landing-page .wsite-header{ width: 325px; height: 324px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/banner-landing.jpg?634669) no-repeat; border-radius:180px; -webkit-box-shadow: 0px 0px 2px 2px rgba(204, 204, 204, 0.2); box-shadow: 0px 0px 2px 2px rgba(204, 204, 204, 0.2); }
+.icontent_container .landing-banner-outer{ display: table; #position: relative; overflow: hidden; }
+.icontent_container .landing-banner-mid{ #position: absolute; #top: 50%; display: table-cell; vertical-align: middle; }
+.icontent_container .landing-banner-inner{ #position: relative; #top: -50%; }
+.icontent_container #bannerright{ float: right; padding: 0 80px 0 45px; width: 510px; height: 324px; }
+.icontent_container #bannerright h2{ color: #484747; font-size: 36px; font-weight:normal; margin: 0px; padding: 0px; line-height: 36px; }
+.icontent_container #bannerright div.paragraph{ color: #656565; font-size: 14px; padding: 20px 0px; line-height: 140%; }
+.icontent_container #bannerright p,.icontent_container #bannerright div.paragraph{ color: #656565; font-size: 14px; padding: 20px 0px; line-height: 140%; }
+.icontent_container #bannerright .wsite-button{ margin: 0px; }
+.icontent_container #main-wrap .container{ padding:20px 0px 50px; min-height:400px; }
+.icontent_container #main-wrap .paragraph ul li{ list-style:circle !important; }
+.icontent_container #main-wrap .container form .wsite-button{ margin-top:20px; }
+.icontent_container #footer-wrap{ text-align:right; color:#cacaca; background:url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/footer-bg.png?634669) repeat; }
+.icontent_container #footer-wrap .container{ padding:30px 0px 30px; }
+.icontent_container #footer-wrap h2{ color:#fff; font-size:19px; }
+.icontent_container #footer-wrap blockquote{ border-left:4px solid #666; color:#888; }
+.icontent_container #footer-wrap div.paragraph a,.icontent_container .weebly-footer a{ color: #fff; border-bottom:1px dashed #fff; }
+.icontent_container #footer-wrap p a,.icontent_container .weebly-footer a{ color: #fff; border-bottom:1px dashed #fff; }
+.icontent_container #footer-wrap a{color:#fff;}
+.icontent_container #footer-wrap .wsite-form-container{ text-align:left; }
+.icontent_container .wsite-form-label{ display: inline-block; }
+.icontent_container #footer-wrap .wsite-form-container{ margin-top:0px !important; }
+.icontent_container .wsite-button{ height: 47px; display: inline-block; padding: 0px 7px 0px 0px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button.png?634669) no-repeat 100% -141px; border:none; }
+.icontent_container .wsite-button:hover{ background-position: 100% -188px; }
+.icontent_container .wsite-button:active{ background-position: 100% -235px; }
+.icontent_container .wsite-button-inner{ color: #808080 !important; height: 47px; line-height: 47px; display: block; font-size: 16px; font-weight: bold; text-decoration: none; text-transform:uppercase; padding: 0px 23px 0px 30px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button.png?634669) no-repeat 0px 0px; }
+.icontent_container .wsite-button:hover .wsite-button-inner{ background-position: 0px -47px; }
+.icontent_container .wsite-button:active .wsite-button-inner{ background-position: 0px -94px; }
+.icontent_container .wsite-button-large{ color: #808080 !important; height: 60px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button-large.png?634669) no-repeat 100% -180px; padding: 0px 7px 0px 0px; }
+.icontent_container .wsite-button-large:hover{ background-position: 100% -240px; }
+.icontent_container .wsite-button-large:active{ background-position: 100% -300px; }
+.icontent_container .wsite-button-large .wsite-button-inner{ height: 60px; line-height: 60px; padding: 0px 23px 0px 30px; background: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button-large.png?634669) no-repeat 0px 0px; }
+.icontent_container .wsite-button-large:hover .wsite-button-inner{ background-position: 0px -60px; }
+.icontent_container .wsite-button-large:active .wsite-button-inner{ background-position: 0px -120px; }
+.icontent_container .wsite-button-highlight{ background-image: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button-highlight.png?634669); }
+.icontent_container .wsite-button-highlight .wsite-button-inner{ color:#262626 !important; background-image: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button-highlight.png?634669); }
+.icontent_container .wsite-button-large.wsite-button-highlight{ background-image: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button-large-highlight.png?634669); }
+.icontent_container .wsite-button-large.wsite-button-highlight .wsite-button-inner{ color:#262626 !important; background-image: url(/editor/uploads/1/4/4/1/14418664/custom_themes/656413839131616435/files/button-large-highlight.png?634669); }
+.icontent_container div.paragraph ul,.icontent_container div.paragraph ol{ padding-left: 3em !important; margin: 5px 0 !important; overflow:hidden; }
+.icontent_container div.paragraph li{ padding-left: 5px !important; margin: 3px 0 0 !important; }
+.icontent_container div.paragraph ul,.icontent_container div.paragraph ul li{ list-style: disc outside !important; }
+.icontent_container div.paragraph ol,.icontent_container div.paragraph ol li{ list-style: decimal outside !important; }
+.icontent_container blockquote{ margin: 10px 0; padding-left: 20px; border-left: 4px solid #ddd; font-style: italic; line-height: 170%; }
+
+.icontent_container #secondlist ul li{ list-style: none; margin-left: 0px; margin-bottom: 10px; }
+.icontent_container div.paragraph ul,.icontent_container div.paragraph ol{ padding-left: 2.3em !important; margin: 5px 0 !important; overflow:hidden; }
+.icontent_container div.paragraph li{ padding-left: 5px !important; margin: 3px 0 0 !important; }
+.icontent_container div.paragraph ul,.icontent_container div.paragraph ul li,.icontent_container .product-description ul li{ list-style: disc outside !important; }
+.icontent_container div.paragraph ol,.icontent_container div.paragraph ol li,.icontent_container .product-description ol li{ list-style: decimal outside !important; }.wsite-elements.wsite-not-footer div.paragraph, .wsite-elements.wsite-not-footer p, .wsite-elements.wsite-not-footer .product-block .product-title, .wsite-elements.wsite-not-footer .product-description, .wsite-elements.wsite-not-footer .wsite-form-field label, .wsite-elements.wsite-not-footer .wsite-form-field label, #secondlist div.paragraph, #secondlist p, #secondlist .product-block .product-title, #secondlist .product-description, #secondlist .wsite-form-field label, #secondlist .wsite-form-field label {}
+#secondlist div.paragraph, #secondlist p, #secondlist .product-block .product-title, #secondlist .product-description, #secondlist .wsite-form-field label, #secondlist .wsite-form-field label {}
+.wsite-elements.wsite-footer div.paragraph, .wsite-elements.wsite-footer p, .wsite-elements.wsite-footer .product-block .product-title, .wsite-elements.wsite-footer .product-description, .wsite-elements.wsite-footer .wsite-form-field label, .wsite-elements.wsite-footer .wsite-form-field label {}
+.wsite-elements.wsite-not-footer h2, .wsite-elements.wsite-not-footer .product-long .product-title, .wsite-elements.wsite-not-footer .product-large .product-title, .wsite-elements.wsite-not-footer .product-small .product-title, #secondlist h2, #secondlist .product-long .product-title, #secondlist .product-large .product-title, #secondlist .product-small .product-title {}
+#secondlist h2, #secondlist .product-long .product-title, #secondlist .product-large .product-title, #secondlist .product-small .product-title {}
+.wsite-elements.wsite-footer h2, .wsite-elements.wsite-footer .product-long .product-title, .wsite-elements.wsite-footer .product-large .product-title, .wsite-elements.wsite-footer .product-small .product-title {}
+#wsite-title {}
+.wsite-not-footer h2.wsite-content-title a, .wsite-not-footer .paragraph a, .wsite-not-footer blockquote a, .wsite-not-footer .blog-sidebar a, .wsite-not-footer .blog-comments a, .wsite-not-footer .blog-comments-bottom a, #wsite-com-store a, #wsite-com-product-gen a {color:#24678d !important;}
+.wsite-menu-default a {}
+.wsite-menu a {}
+.wsite-image div, .wsite-caption {}
+.galleryCaptionInnerText {}
+.fancybox-title {}
+.wslide-caption-text {}
+.wsite-phone {}
+.wsite-headline {}
+.wsite-headline-paragraph {}
+.wsite-button-inner {}
+.wsite-not-footer blockquote {}
+.wsite-footer blockquote {}
+.blog-header h2 a {}
+#secondlist h2.wsite-product-title {}
+.wsite-product .wsite-product-price a {}
+.wsite-not-footer h2.wsite-content-title a:hover, .wsite-not-footer .paragraph a:hover, .wsite-not-footer blockquote a:hover, .wsite-not-footer .blog-sidebar a:hover, .wsite-not-footer .blog-comments a:hover, .wsite-not-footer .blog-comments-bottom a:hover, #wsite-com-store a:hover, #wsite-com-product-gen a:hover {color:#24678d !important;}
+</style>
+
+		<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js'></script>
+	</head>
+	<body style='margin: 0; padding: 0; background: transparent; min-height:10px; _height:10px' onclick="parent.clickHandler(event, '195313550152726472');">
+		<div id="icontent_container" class="icontent_container">
+			<div id="icontent" class="icontent">
+				<div id="secondlist">
+					<div class="paragraph" id="customhtml-content" style="text-align:left;">
+						<SCRIPT language='JavaScript1.1' SRC="https://ad.doubleclick.net/ddm/adj/N233401.158901DATAXU/B9117611.123641842;sz=728x90;click=https://i.w55c.net/cl?t=1&btid=NTY3ODhFQjIwMDAwNTExMjBBQkMxQjkwRTYwNDUyMDV8R0ZzNWlJY3dhWnwxNDUwNzQxNDI2MTA5fDF8MEZ6MzJsSDI5cnwwUnZJRFF4TVRPfDAxMmNkNjM3LTA3Y2YtNDYyZS1hOTU0LTg3ZTMyOThmNGI3NHwyNTAwMDB8fHx8MTUuMFB8VVNE&ei=GOOGLE_CONTENTNETWORK&tpc=http://adclick.g.doubleclick.net/aclk%3Fsa%3Dl%26ai%3DCRt-0so54VpKiAZC38AWFpJGwDrWvhucH7aX597gBwI23ARABIABg4cS5BYIBF2NhLXB1Yi01ODY1MzExODc1MjI3NTM2oAGxtNXsA8gBCagDAaoElAFP0BuK1EpwjLHuuchmixWO9P1I9EAAvJUkm15bAleP_rwPpe_Cffv96Y0AQOpjepkCG0GqcDtVUgCslfqMuhoYBwERG9ELzhPWrb5-0n_hZYmcDZ9oPd0BFw-52V041ccQNEOs12Qbbq4ZlJj0-FOLFeNit7mJkpESdNgL5IRt7toPqfxVGUzemrLFZFyljmlIdJBBgAbd5_fo6bSk2-EBoAYh2AcA%26num%3D1%26sig%3DAOD64_3XZ7TbBlIbwPNPCfGQBAfgpiNVMg%26client%3Dca-pub-5865311875227536%26adurl%3D&rurl=;ord=2357653253651662?">
+</SCRIPT><NOSCRIPT>
+<a href="https://i.w55c.net/cl?t=1&btid=NTY3ODhFQjIwMDAwNTExMjBBQkMxQjkwRTYwNDUyMDV8R0ZzNWlJY3dhWnwxNDUwNzQxNDI2MTA5fDF8MEZ6MzJsSDI5cnwwUnZJRFF4TVRPfDAxMmNkNjM3LTA3Y2YtNDYyZS1hOTU0LTg3ZTMyOThmNGI3NHwyNTAwMDB8fHx8MTUuMFB8VVNE&ei=GOOGLE_CONTENTNETWORK&tpc=http://adclick.g.doubleclick.net/aclk%3Fsa%3Dl%26ai%3DCRt-0so54VpKiAZC38AWFpJGwDrWvhucH7aX597gBwI23ARABIABg4cS5BYIBF2NhLXB1Yi01ODY1MzExODc1MjI3NTM2oAGxtNXsA8gBCagDAaoElAFP0BuK1EpwjLHuuchmixWO9P1I9EAAvJUkm15bAleP_rwPpe_Cffv96Y0AQOpjepkCG0GqcDtVUgCslfqMuhoYBwERG9ELzhPWrb5-0n_hZYmcDZ9oPd0BFw-52V041ccQNEOs12Qbbq4ZlJj0-FOLFeNit7mJkpESdNgL5IRt7toPqfxVGUzemrLFZFyljmlIdJBBgAbd5_fo6bSk2-EBoAYh2AcA%26num%3D1%26sig%3DAOD64_3XZ7TbBlIbwPNPCfGQBAfgpiNVMg%26client%3Dca-pub-5865311875227536%26adurl%3D&rurl=https://ad.doubleclick.net/ddm/jump/N233401.158901DATAXU/B9117611.123641842;sz=728x90;ord=2357653253651662?" target="_blank">
+<IMG SRC="https://ad.doubleclick.net/ddm/ad/N233401.158901DATAXU/B9117611.123641842;sz=728x90;ord=2357653253651662?" BORDER=0 WIDTH=728 HEIGHT=90 ALT="Advertisement"></A>
+</NOSCRIPT>
+<script type="text/javascript" src="https://cti.w55c.net/ct/creative_add_on.js?w=728&h=90&pos=top-right&zindex=0&ci=0CZP8tdtAv&ei=GOOGLE_CONTENTNETWORK&fiu=MEZ6MzJsSDI5cg&epid=R0Mx&esid=&ai=0D9ui45fim&ob=1&dvt=&s=http%3A%2F%2Fhelp.mathlab.us%2F98-inequalities-with-constants.html"></script>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
+</div>
+
+
+
+</div>
+
+<div style="text-align:right;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-normal" href="1981-covariance.html" >
+<span class="wsite-button-inner"><strong>next: 19.8.1. covariance &gt;</strong></span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+
+<div style="text-align:right;"><div style="height: 10px; overflow: hidden;"></div>
+<a class="wsite-button wsite-button-small wsite-button-normal" href="" >
+<span class="wsite-button-inner"><span>list of contents</span></span>
+</a>
+<div style="height: 10px; overflow: hidden;"></div></div>
+</div>
+
+        </div><!-- end container -->
+    </div><!-- end main-wrap -->
+
+    <div id="footer-wrap">
+        <div class="container">
+       		Create a <a target="_top" href="http://www.weebly.com/">free web site</a> with <a target="_top" href="http://www.weebly.com/" title="free web site">Weebly</a>
+        </div><!-- end container -->
+    </div><!-- end footer-wrap -->
+
+<!-- THIS SCRIPT IS ADDED IN MANUALLY-->
+<!-- Developer: Vadim Pelyushenko-->
+<script>
+	$(document).ready(function() 
+	 {
+		var cx = '017459606385276639634:0k76wbdgiiu';
+		var gcse = document.createElement('script');
+		gcse.type = 'text/javascript';
+		gcse.async = true;
+		gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//cse.google.com/cse.js?cx=' + cx;
+		var s = document.getElementsByTagName('script')[0];
+		s.parentNode.insertBefore(gcse, s);
+	 });			  
+</script>    <div id="customer-accounts-app"></div>
+    <script src="http://cdn2.editmysite.com/js/site/main-customer-accounts-site.js?buildTime=1234"></script>
+
+		<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-33223602-1', 'mathlab.us');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+
+</script>
+	</body>
+</html>
